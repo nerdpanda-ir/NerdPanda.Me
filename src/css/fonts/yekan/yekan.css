@@ -1,0 +1,132 @@
+/*------------- yekan black -------------*/
+@font-face
+{
+    font-family: "pf-yekan-black";
+    src
+    :
+        url("../../../fonts/persian/yekan/black/iranyekanwebblack.eot?#iefix") format("embedded-opentype"),
+        url("../../../fonts/persian/yekan/black/iranyekanwebblack.eot") format("embedded-opentype"),
+        url("../../../fonts/persian/yekan/black/iranyekanwebblack.svg") format("svg"),
+        url("../../../fonts/persian/yekan/black/iranyekanwebblack.ttf") format("truetype"),
+        url("../../../fonts/persian/yekan/black/iranyekanwebblack.woff") format("woff")
+    ;
+}
+
+/*------------- yekan black -------------*/
+
+/*------------- yekan bold -------------*/
+@font-face
+{
+    font-family: "pf-yekan-bold";
+    src
+    :
+            url("../../../fonts/persian/yekan/bold/iranyekanwebbold.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/bold/iranyekanwebbold.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/bold/iranyekanwebbold.svg") format("svg"),
+            url("../../../fonts/persian/yekan/bold/iranyekanwebbold.ttf") format("truetype"),
+            url("../../../fonts/persian/yekan/bold/iranyekanwebbold.woff") format("woff")
+;
+}
+
+/*------------- yekan bold -------------*/
+
+
+/*------------- yekan exteraBlack -------------*/
+@font-face
+{
+    font-family: "pf-yekan-exteraBlack";
+    src
+    :
+            url("../../../fonts/persian/yekan/exteraBlack/iranyekanwebextrablack.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/exteraBlack/iranyekanwebextrablack.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/exteraBlack/iranyekanwebextrablack.svg") format("svg"),
+            url("../../../fonts/persian/yekan/exteraBlack/iranyekanwebextrablack.ttf") format("truetype"),
+            url("../../../fonts/persian/yekan/exteraBlack/iranyekanwebextrablack.woff") format("woff")
+;
+}
+
+/*------------- yekan exteraBlack -------------*/
+
+/*------------- yekan exteraBold -------------*/
+@font-face
+{
+    font-family: "pf-yekan-exteraBold";
+    src
+    :
+            url("../../../fonts/persian/yekan/exteraBlack/iranyekanwebextrablack.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/exteraBlack/iranyekanwebextrablack.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/exteraBlack/iranyekanwebextrablack.svg") format("svg"),
+            url("../../../fonts/persian/yekan/exteraBlack/iranyekanwebextrablack.ttf") format("truetype"),
+            url("../../../fonts/persian/yekan/extrabold/iranyekanwebextrabold.woff") format("woff")
+;
+}
+
+/*------------- yekan exteraBold -------------*/
+
+
+/*------------- yekan light -------------*/
+@font-face
+{
+    font-family: "pf-yekan-light";
+    src
+    :
+            url("../../../fonts/persian/yekan/light/iranyekanweblight.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/light/iranyekanweblight.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/light/iranyekanweblight.svg") format("svg"),
+            url("../../../fonts/persian/yekan/light/iranyekanweblight.ttf") format("truetype"),
+            url("../../../fonts/persian/yekan/extrabold/iranyekanwebextrabold.woff") format("woff")
+;
+}
+
+/*------------- yekan light -------------*/
+
+
+/*------------- yekan medium  -------------*/
+@font-face
+{
+    font-family: "pf-yekan-medium";
+    src
+    :
+            url("../../../fonts/persian/yekan/medium/iranyekanwebmedium.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/medium/iranyekanwebmedium.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/medium/iranyekanwebmedium.svg") format("svg"),
+            url("../../../fonts/persian/yekan/medium/iranyekanwebmedium.ttf") format("truetype"),
+            url("../../../fonts/persian/yekan/medium/iranyekanwebmedium.woff") format("woff")
+;
+}
+
+/*------------- yekan medium -------------*/
+
+
+/*------------- yekan regular  -------------*/
+@font-face
+{
+    font-family: "pf-yekan-regular";
+    src
+    :
+            url("../../../fonts/persian/yekan/regular/iranyekanwebregular.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/regular/iranyekanwebregular.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/regular/iranyekanwebregular.svg") format("svg"),
+            url("../../../fonts/persian/yekan/regular/iranyekanwebregular.ttf") format("truetype"),
+            url("../../../fonts/persian/yekan/regular/iranyekanwebregular.woff") format("woff")
+;
+}
+
+/*------------- yekan regular -------------*/
+
+
+/*------------- yekan thin  -------------*/
+@font-face
+{
+    font-family: "pf-yekan-regular";
+    src
+    :
+            url("../../../fonts/persian/yekan/thin/iranyekanwebthin.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/thin/iranyekanwebthin.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/yekan/thin/iranyekanwebthin.svg") format("svg"),
+            url("../../../fonts/persian/yekan/thin/iranyekanwebthin.ttf") format("truetype"),
+            url("../../../fonts/persian/yekan/thin/iranyekanwebthin.woff") format("woff")
+;
+}
+
+/*------------- yekan thin -------------*/
