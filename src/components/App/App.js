@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Index from '../Page/index/Index';
 export default class App extends React.Component {
     constructor() {
         super();
@@ -8,7 +8,7 @@ export default class App extends React.Component {
         let element =
             (
                 <React.Fragment>
-                    سلام
+                    <Index />
                 </React.Fragment>
             );
         return element
