@@ -8,7 +8,7 @@ export default class App extends React.Component {
         let element =
             (
                 <React.Fragment>
-
+                    سلام
                 </React.Fragment>
             );
         return element
