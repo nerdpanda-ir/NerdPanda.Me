@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../../../css/Page/index/index.css'
 export default class Index extends React.Component {
     constructor() {
         super();
