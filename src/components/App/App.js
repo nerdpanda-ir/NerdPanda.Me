@@ -1,10 +1,14 @@
-import React from 'react';
-import '../../css/frameWorks/global/global.css';
-import Index from '../Page/index/Index';
+/*====   import Sctipt    ====*/
+    import React from 'react';
+    import Index from '../Page/index/Index';
+/*====   import Sctipt    ====*/
+
+/*====   import Styles    ====*/
+    import '../../css/frameWorks/global/global.css';
+/*====   import Styles    ====*/
+
+
 export default class App extends React.Component {
-    constructor() {
-        super();
-    }
     render() {
         let element =
             (
