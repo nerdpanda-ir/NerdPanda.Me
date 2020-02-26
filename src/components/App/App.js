@@ -1,6 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
     import Index from '../Page/index/Index';
+    import NotFound from '../Page/NotFound/NotFound';
     import {BrowserRouter,Route,Switch} from 'react-router-dom';
 /*====   import Sctipt    ====*/
 
@@ -14,7 +15,12 @@ export default class App extends React.Component {
         let element =
             (
                 <React.Fragment>
-                    <Index />
+                    <BrowserRouter>
+                        <Switch>
+                            <Route path='/' exact component={Index} />
+                            <Route component={NotFound} />
+                        </Switch>
+                    </BrowserRouter>
                 </React.Fragment>
             );
         return element
