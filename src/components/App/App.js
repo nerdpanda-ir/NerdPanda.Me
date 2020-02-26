@@ -1,6 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
     import Index from '../Page/index/Index';
+    import {BrowserRouter,Route,Switch} from 'react-router-dom';
 /*====   import Sctipt    ====*/
 
 /*====   import Styles    ====*/
