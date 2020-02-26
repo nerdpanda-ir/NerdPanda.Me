@@ -1,0 +1,88 @@
+/*------ import normal font -----------*/
+@font-face
+{
+    font-family: "pf-sans-normal";
+    src
+    :
+            url("../../../fonts/persian/sans/pf-sans-normal/pf-sans-normal.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-normal/pf-sans-normal.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-normal/pf-sans-normal.ttf") format("truetype"),
+            url("../../../fonts/persian/sans/pf-sans-normal/pf-sans-normal.woff") format("woff"),
+            url("../../../fonts/persian/sans/pf-sans-normal/pf-sans-normal.woff2") format("woff2")
+    ;
+}
+/*------ import normal font -----------*/
+
+/*------ import black font -----------*/
+@font-face
+{
+    font-family: "pf-sans-black";
+    src
+    :
+            url("../../../fonts/persian/sans/pf-sans-Black/pf-sans-black.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-Black/pf-sans-black.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-Black/pf-sans-black.ttf") format("truetype"),
+            url("../../../fonts/persian/sans/pf-sans-Black/pf-sans-black.woff") format("woff"),
+            url("../../../fonts/persian/sans/pf-sans-Black/pf-sans-black.woff2") format("woff2")
+;
+}
+/*------ import black font -----------*/
+/*------ import bold font -----------*/
+@font-face
+{
+    font-family: "pf-sans-bold";
+    src
+    :
+            url("../../../fonts/persian/sans/pf-sans-Bold/pf-sans-bold.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-Bold/pf-sans-bold.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-Bold/pf-sans-bold.ttf") format("truetype"),
+            url("../../../fonts/persian/sans/pf-sans-Bold/pf-sans-bold.woff") format("woff"),
+            url("../../../fonts/persian/sans/pf-sans-Bold/pf-sans-bold.woff2") format("woff2")
+;
+}
+/*------ import bold font -----------*/
+
+/*------ import light font -----------*/
+@font-face
+{
+    font-family: "pf-sans-light";
+    src
+    :
+            url("../../../fonts/persian/sans/pf-sans-Light/pf-sans-light.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-Light/pf-sans-light.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-Light/pf-sans-light.ttf") format("truetype"),
+            url("../../../fonts/persian/sans/pf-sans-Light/pf-sans-light.woff") format("woff"),
+            url("../../../fonts/persian/sans/pf-sans-Light/pf-sans-light.woff2") format("woff2")
+;
+}
+/*------ import light font -----------*/
+
+/*------ import med font -----------*/
+@font-face
+{
+    font-family: "pf-sans-medium";
+    src
+    :
+            url("../../../fonts/persian/sans/pf-sans-Medium/pf-sans-medium.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-Medium/pf-sans-medium.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-Medium/pf-sans-medium.ttf") format("truetype"),
+            url("../../../fonts/persian/sans/pf-sans-Medium/pf-sans-medium.woff") format("woff"),
+            url("../../../fonts/persian/sans/pf-sans-Medium/pf-sans-medium.woff2") format("woff2")
+;
+}
+/*------ import med font -----------*/
+
+/*------ import ultraLight font -----------*/
+@font-face
+{
+    font-family: "pf-sans-ultraLight";
+    src
+    :
+            url("../../../fonts/persian/sans/pf-sans-UltraLight/pf-sans-ultraLight.eot?#iefix") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-UltraLight/pf-sans-ultraLight.eot") format("embedded-opentype"),
+            url("../../../fonts/persian/sans/pf-sans-UltraLight/pf-sans-ultraLight.ttf") format("truetype"),
+            url("../../../fonts/persian/sans/pf-sans-UltraLight/pf-sans-ultraLight.woff") format("woff"),
+            url("../../../fonts/persian/sans/pf-sans-UltraLight/pf-sans-ultraLight.woff2") format("woff2")
+;
+}
+/*------ import ultraLight font -----------*/
