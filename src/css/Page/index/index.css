@@ -3,4 +3,5 @@ body
     font-family: 'pf-sans-light','lf-light' !important;
     direction: rtl;
     background-color: var(--color-white);
+    color : var(--color-main);
 }
