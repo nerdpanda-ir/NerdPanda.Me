@@ -1,8 +1,15 @@
 #topNav
 {
-    height: 70px;
+    height: 85px;
 }
-#NavLogo
+#NavLogoWrapper
 {
-    background: red;
+    padding: 17px 0;
+}
+#NavLogoWrapper img
+{
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+    max-height: 100%;
 }
