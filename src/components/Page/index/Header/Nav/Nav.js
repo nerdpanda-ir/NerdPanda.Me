@@ -21,7 +21,7 @@ export default class Nav extends React.Component
             <React.Fragment>
                 <nav id='topNav' className='sh1'>
                     <Container className='h100'>
-                        <Logo id='NavLogo' className='h100 disIB col-1' imageSrc={LogoImg} alt='NerdPandaLogo'/>
+                        <Logo id='NavLogoWrapper' className='h100 disIB col-1 boxSBB' imageSrc={LogoImg} alt='NerdPandaLogo'/>
                     </Container>
                 </nav>
             </React.Fragment>
