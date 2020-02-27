@@ -17,7 +17,7 @@ export default class Container extends React.Component
         let result = 
         (
             <React.Fragment>
-                <section className={'container '+this.state.classList}>
+                <section className={'container margCenter '+this.state.classList}>
                     {
                         this.props.children
                     }
