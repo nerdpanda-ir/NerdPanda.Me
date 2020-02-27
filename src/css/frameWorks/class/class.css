@@ -1,0 +1,90 @@
+/* ====     colors  Varable ==== */
+    :root
+    {
+        --color-main :var(--color-gray); 
+        --color-secound :var(--color-perple-dark) ; 
+
+        --color-white : #fff;
+        --color-white-light : #f5f6fe; 
+        --color-white-dark : #d9dce7;
+        
+        --color-gray : #5f6b75;
+        --color-gray-dark : #3b444b;
+
+        --color-perple-dark : #9b4dca;
+    }
+/* ====    colors  Varable   ==== */
+
+
+/* ====    background  Class   ==== */
+    .bg-white
+    {
+        background-color: var(--color-white);
+    }
+    .bg-white-light
+    {
+        background-color: var(--color-white-light);
+    }
+    .bg-dark-gray
+    {
+        background-color: var(--color-gray-dark);
+    }
+
+/* ====    background  Class   ==== */
+
+
+/* ====    color  Class   ==== */
+    .color-main
+    {
+        color : var(--color-main)
+    }
+    .color-secound
+    {
+        color : var(--color-secound);
+    }
+    .color-white
+    {
+        color : var(--color-white);
+    }
+/* ====    color  Class   ==== */
+
+
+/* ====    box Class  ==== */
+    .disIB
+    {
+        display: inline-block;
+    }
+    .boxSBB
+    {
+        box-sizing: border-box;
+    }
+/* ====    box Class  ==== */
+
+
+/* ====    size Class  ==== */
+    .h100
+    {
+        height:  100%;
+    }
+    
+/* ====    size Class  ==== */
+
+
+/* ====    postion Class  ==== */
+    .flR
+    {
+        float: right;
+    }
+    .flL
+    {
+        float: left;
+    }
+    .posRel
+    {
+        position: relative;
+    }
+    .posAb
+    {
+        position: absolute;
+    }
+/* ====    postion Class  ==== */
