@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
+    import Nav from './Nav/Nav';
 /*====   import Sctipt    ====*/
 
 /*====   import Styles    ====*/
@@ -13,7 +14,7 @@ export default class Header extends React.Component
         (
             <React.Fragment>
                 <header id='pageHeader'> 
-                    page header 
+                    <Nav />
                 </header>
             </React.Fragment>
         );
