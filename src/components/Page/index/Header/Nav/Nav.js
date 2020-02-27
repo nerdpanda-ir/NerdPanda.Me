@@ -7,6 +7,11 @@
 /*====   import Styles  ====*/
     import '../../../../../css/Page/index/Header/Nav/Nav.css'
 /*====   import Styles  ====*/
+
+
+/*====   import Files  ====*/
+    import LogoImg from '../../../../../img/global/Logo.svg'
+/*====   import Files  ====*/
 export default class Nav extends React.Component
 {
     render()
@@ -16,7 +21,7 @@ export default class Nav extends React.Component
             <React.Fragment>
                 <nav id='topNav' className='sh1'>
                     <Container className='h100'>
-                        <Logo id='NavLogo' className='h100 disIB col-1' imageSrc='image' alt='NerdPandaLogo'/>
+                        <Logo id='NavLogo' className='h100 disIB col-1' imageSrc={LogoImg} alt='NerdPandaLogo'/>
                     </Container>
                 </nav>
             </React.Fragment>
