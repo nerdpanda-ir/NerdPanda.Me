@@ -12,6 +12,19 @@
         --color-gray-dark : #3b444b;
 
         --color-perple-dark : #9b4dca;
+
+        --col-1: 8.33%;
+        --col-2: 16.66%;
+        --col-3: 25%;
+        --col-4: 33.33%;
+        --col-5: 41.66%;
+        --col-6: 50%;
+        --col-7: 58.33%;
+        --col-8: 66.66%;
+        --col-9: 75%;
+        --col-10: 83.33%;
+        --col-11: 91.66%;
+        --col-12: 100%;
     }
 /* ====    colors  Varable   ==== */
 
@@ -58,6 +71,10 @@
     {
         box-sizing: border-box;
     }
+    .container 
+    {
+        width: var(--col-9);
+    }
 /* ====    box Class  ==== */
 
 
@@ -86,5 +103,10 @@
     .posAb
     {
         position: absolute;
+    }
+    .margCenter 
+    {
+        margin-right:auto ;
+        margin-left: auto;
     }
 /* ====    postion Class  ==== */
