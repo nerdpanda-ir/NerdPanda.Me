@@ -2,6 +2,7 @@
     import React from "react";  
     import Container from '../../../../Container/Container'
     import Logo from '../../../../Logo/Logo'
+    import Menu from './Menu/Menu';
 /*====   import Sctipt    ====*/
 
 /*====   import Styles  ====*/
@@ -22,6 +23,7 @@ export default class Nav extends React.Component
                 <nav id='topNav' className='sh1'>
                     <Container className='h100'>
                         <Logo id='NavLogoWrapper' className='h100 disIB col-1 boxSBB' imageSrc={LogoImg} alt='NerdPandaLogo'/>
+                        <Menu />
                     </Container>
                 </nav>
             </React.Fragment>
