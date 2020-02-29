@@ -8,7 +8,7 @@ export default class ListIcon extends React.Component
         let result = 
         (
             <React.Fragment>
-                <i class="fab fa-react"></i>
+                <i className="menuIcon fab fa-react"></i>
             </React.Fragment>
         )
         return result;
