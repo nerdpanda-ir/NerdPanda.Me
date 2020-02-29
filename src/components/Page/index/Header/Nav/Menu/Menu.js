@@ -18,6 +18,21 @@ export default class Menu extends React.Component
                     <ListInfoProvider value={['خانه','fal fa-home-heart']}>
                         <List />
                     </ListInfoProvider>
+                    <ListInfoProvider value={['درباره من','fal fa-bullhorn']}>
+                        <List />
+                    </ListInfoProvider>
+                    <ListInfoProvider value={['مهارت ها','fal fa-head-side-brain']}>
+                        <List />
+                    </ListInfoProvider>
+                    <ListInfoProvider value={['نمونه کارها','fal fa-handshake']}>
+                        <List />
+                    </ListInfoProvider>
+                    <ListInfoProvider value={['وبلاگ','fal fa-newspaper']}>
+                        <List />
+                    </ListInfoProvider>
+                    <ListInfoProvider value={['تماس با من','fal fa-comments-dollar']}>
+                        <List />
+                    </ListInfoProvider>
                 </ul>
             </React.Fragment>
         );
