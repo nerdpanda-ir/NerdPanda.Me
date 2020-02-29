@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
-import React from 'react';
+    import React from 'react';
+    import ListIcon from './ListIcon/ListIcon';
 /*====   import Sctipt    ====*/
 export default class List extends React.Component
 {
@@ -8,7 +9,9 @@ export default class List extends React.Component
         let result = 
         (
             <React.Fragment>
-                <li>list </li>
+                <li>
+                    <ListIcon />
+                </li>
             </React.Fragment>
         );
         return result ;
