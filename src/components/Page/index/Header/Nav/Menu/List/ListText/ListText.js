@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
+    import  {ListInfoConsumer} from "../../ListInfoContext/ListInfo";
 /*====   import Sctipt    ====*/
 export default class ListText extends React.Component
 {
@@ -9,10 +10,16 @@ export default class ListText extends React.Component
         (
             <React.Fragment>
                 <span className='listText'>
-                    منوی اول 
+                    <ListInfoConsumer>
+                        {
+                            (value)=> value[0]
+                        }
+                    </ListInfoConsumer>
                 </span>
             </React.Fragment>
         );
         return result;
     }
+
+
 }
