@@ -2,6 +2,10 @@
     import React from 'react';
     import List from './List/List';
 /*====   import Sctipt    ====*/
+
+/*====   import Style    ====*/
+    import '../../../../../../css/Page/index/Header/Nav/menu/Menu.css'
+/*====   import Style    ====*/
 export default class Menu extends React.Component
 {
     render()
