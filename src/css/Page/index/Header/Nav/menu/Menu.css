@@ -3,6 +3,12 @@
     height: var(--col-12);
     display: inline-block;
 }
+#PageMenu li a 
+{
+    color: var(--color-main);
+    text-decoration: none;
+}
+
 .menuIcon
 {
     font-size: 25px;
