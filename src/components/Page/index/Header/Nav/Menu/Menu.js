@@ -14,7 +14,7 @@ export default class Menu extends React.Component
         let result = 
         (
             <React.Fragment>
-                <ul id='PageMenu' className='disIB h100 col-9'>
+                <ul id='PageMenu' className='disIB h100 col-9 flR'>
                     <ListInfoProvider value={['خانه','fal fa-home-heart']}>
                         <List url='/'/>
                     </ListInfoProvider>
