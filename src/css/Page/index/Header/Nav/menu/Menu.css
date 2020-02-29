@@ -1,0 +1,9 @@
+#PageMenu li
+{
+    height: var(--col-12);
+    display: inline-block;
+}
+.menuIcon
+{
+    font-size: 25px;
+}
