@@ -2,12 +2,12 @@
 {
     height: var(--col-12);
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 19px;
 }
-#PageMenu li:last-child
+/*#PageMenu li:last-child
 {
     margin-left: 0;
-}
+}*/
 .listActive
 {
     border-bottom: 2px solid var(--color-secound);
@@ -17,7 +17,7 @@
 {
     color: var(--color-main);
     text-decoration: none;
-    padding: 29px 19px;
+    padding: 29px 18px;
 }
 #PageMenu li a:focus
 {
