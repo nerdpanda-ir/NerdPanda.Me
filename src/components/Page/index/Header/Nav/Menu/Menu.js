@@ -16,22 +16,22 @@ export default class Menu extends React.Component
             <React.Fragment>
                 <ul id='PageMenu' className='disIB h100 col-9'>
                     <ListInfoProvider value={['خانه','fal fa-home-heart']}>
-                        <List />
+                        <List url='/'/>
                     </ListInfoProvider>
                     <ListInfoProvider value={['درباره من','fal fa-bullhorn']}>
-                        <List />
+                        <List url='/home'/>
                     </ListInfoProvider>
                     <ListInfoProvider value={['مهارت ها','fal fa-head-side-brain']}>
-                        <List />
+                        <List url='/home'/>
                     </ListInfoProvider>
                     <ListInfoProvider value={['نمونه کارها','fal fa-handshake']}>
-                        <List />
+                        <List url='/home'/>
                     </ListInfoProvider>
                     <ListInfoProvider value={['وبلاگ','fal fa-newspaper']}>
-                        <List />
+                        <List url='/home'/>
                     </ListInfoProvider>
                     <ListInfoProvider value={['تماس با من','fal fa-comments-dollar']}>
-                        <List />
+                        <List url='/home'/>
                     </ListInfoProvider>
                 </ul>
             </React.Fragment>
