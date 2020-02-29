@@ -1,6 +1,5 @@
 /*====   import Sctipt    ====*/
-import React from 'react';
-import ListIcon from './ListIcon/ListIcon';
+    import React from 'react';
 /*====   import Sctipt    ====*/
 export default class ListText extends React.Component
 {
