@@ -2,7 +2,7 @@
 {
     height: var(--col-12);
     display: inline-block;
-    margin-left: 18px;
+    margin-left: 20px;
 }
 #PageMenu li:last-child
 {
@@ -17,7 +17,7 @@
 {
     color: var(--color-main);
     text-decoration: none;
-    padding: 29px 18px;
+    padding: 29px 19px;
 }
 #PageMenu li a:focus
 {
