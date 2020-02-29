@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
-import React from 'react';
+    import React from 'react';
+    import {ListInfoConsumer} from "../../ListInfoContext/ListInfo";
 /*====   import Sctipt    ====*/
 export default class ListIcon extends React.Component
 {
@@ -8,7 +9,9 @@ export default class ListIcon extends React.Component
         let result = 
         (
             <React.Fragment>
-                <i className="menuIcon fab fa-react"></i>
+                <ListInfoConsumer>
+                    {(value)=><i className={"menuIcon "+value[1]}></i>}
+                </ListInfoConsumer>
             </React.Fragment>
         )
         return result;
