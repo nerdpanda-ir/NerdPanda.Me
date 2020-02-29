@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
+    import {NavLink} from 'react-router-dom';
     import ListIcon from './ListIcon/ListIcon';
     import ListText from './ListText/ListText';
 /*====   import Sctipt    ====*/
@@ -11,8 +12,10 @@ export default class List extends React.Component
         (
             <React.Fragment>
                 <li>
-                    <ListIcon />
-                    <ListText />
+                    <NavLink to='/comp'>
+                        <ListIcon />
+                        <ListText />
+                    </NavLink>
                 </li>
             </React.Fragment>
         );
