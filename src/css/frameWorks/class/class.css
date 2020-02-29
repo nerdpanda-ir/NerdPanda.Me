@@ -12,6 +12,7 @@
         --color-gray-dark : #3b444b;
 
         --color-perple-dark : #9b4dca;
+        --color-gradient-perple : linear-gradient(to right, #E100FF, #7F00FF);
 
         --col-1: 8.33%;
         --col-2: 16.66%;
@@ -83,7 +84,6 @@
     {
         height:  100%;
     }
-    
 /* ====    size Class  ==== */
 
 
