@@ -7,7 +7,7 @@ export default class Arrow extends React.Component
         let result =
             (
                 <React.Fragment>
-                    <i className="fal fa-sort-down" id='lagnArrow'></i>
+                    <i className="fal fa-sort-down col-1" id='lagnArrow'></i>
                 </React.Fragment>
             );
         return result;

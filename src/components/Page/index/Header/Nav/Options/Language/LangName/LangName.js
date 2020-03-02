@@ -9,7 +9,7 @@ export default class LangName extends React.Component{
             (
                 <React.Fragment>
                     <LangInfoConsumer>
-                        {(value)=> <span className='langName'>{value.name}</span>}
+                        {(value)=> <span className='langName col-3'>{value.name}</span>}
                     </LangInfoConsumer>
                 </React.Fragment>
             );
