@@ -4,6 +4,10 @@
     import Arrow from "../Language/Arrow/Arrow";
 /*====   import Sctipt    ====*/
 
+/*====   import Style    ====*/
+    import '../../../../../../../css/Page/index/Header/Nav/Options/Language/LangSelect/LangSelect.css';
+/*====   import Style    ====*/
+
 
 export default class LangSelected extends React.Component{
     render() {

@@ -4,9 +4,7 @@
     import {GlobalContextProvider} from "../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
-/*====   import Style    ====*/
-    import '../../../../../../css/Page/index/Header/Nav/menu/Menu.css'
-/*====   import Style    ====*/
+
 export default class Menu extends React.Component
 {
     render()

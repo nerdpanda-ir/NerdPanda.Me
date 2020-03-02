@@ -4,6 +4,10 @@
     import ListIcon from './ListIcon/ListIcon';
     import ListText from './ListText/ListText';
 /*====   import Sctipt    ====*/
+
+/*====   import Style    ====*/
+    import '../../../../../../../css/Page/index/Header/Nav/menu/List/List.css'
+/*====   import Style    ====*/
 export default class List extends React.Component
 {
     constructor() {

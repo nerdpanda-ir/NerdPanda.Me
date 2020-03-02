@@ -7,22 +7,7 @@
     cursor: pointer;
     box-shadow: var(--sh3);
 }
-#language img
-{
-    height: 45px;
-}
-.langName
-{
-    margin-right: var(--col-1);
-}
-#lagnArrow
-{
-    color: var(--color-secound);
-    font-size: 20px;
-    margin-right: var(--col-1);
-}
-#LangSelect
-{
-    padding: 7px 0;
-}
+
+
+
 

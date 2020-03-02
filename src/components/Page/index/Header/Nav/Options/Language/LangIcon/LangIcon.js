@@ -3,6 +3,10 @@
     import {GlobalContextConsumer} from "../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
+/*====   import Style    ====*/
+    import '../../../../../../../../css/Page/index/Header/Nav/Options/Language/LangIcon/LangIcon.css'
+/*====   import Style    ====*/
+
 export default class LangIcon extends React.Component
 {
     render()

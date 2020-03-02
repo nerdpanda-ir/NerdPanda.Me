@@ -3,6 +3,10 @@
     import Language from "./Language/Language";
 /*====   import Sctipt    ====*/
 
+/*====   import Style    ====*/
+    import '../../../../../../css/Page/index/Header/Nav/Options/Options.css'
+/*====   import Style    ====*/
+
 export default class Options extends React.Component
 {
     render() {

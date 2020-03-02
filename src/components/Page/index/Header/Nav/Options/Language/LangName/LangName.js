@@ -3,6 +3,9 @@
     import {GlobalContextConsumer} from "../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
+/*====   import Style    ====*/
+    import '../../../../../../../../css/Page/index/Header/Nav/Options/Language/LangName/LangName.css'
+/*====   import Style    ====*/
 export default class LangName extends React.Component{
     render() {
         let result =
