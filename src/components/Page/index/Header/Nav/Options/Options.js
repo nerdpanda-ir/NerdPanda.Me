@@ -9,7 +9,7 @@ export default class Options extends React.Component
         let result =
             (
                 <React.Fragment>
-                    <section className='disIB h100 col-2 dirL'>
+                    <section className='disIB h100 col-2 dirL boxSBB' id='navOption'>
                         <Language />
                     </section>
                 </React.Fragment>
