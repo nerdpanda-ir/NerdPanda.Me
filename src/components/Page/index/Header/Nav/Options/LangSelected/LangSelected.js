@@ -9,7 +9,7 @@ export default class LangSelected extends React.Component{
     render() {
         let result = (
             <React.Fragment>
-                <section id='LangSelect' className='h100'>
+                <section id='LangSelect' className='h100 textCenter boxSBB'>
                         <LangRow />
                         <Arrow />
                 </section>
