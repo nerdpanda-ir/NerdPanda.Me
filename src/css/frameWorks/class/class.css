@@ -1,4 +1,4 @@
-/* ====     colors  Varable ==== */
+/* ====     colors  Varables And Defalt Setting     ==== */
     :root
     {
         --color-main :var(--color-gray); 
@@ -31,7 +31,26 @@
         --sh2 :0 0 15px  rgba(188,207,219,.35);
         --sh3 :0 2px 10px 0 rgba(0, 0, 0, 0.12);
     }
-/* ====    colors  Varable   ==== */
+    ::selection
+    {
+        background: var(--color-secound);
+        color: var(--color-white);
+    }
+    ::-webkit-scrollbar
+    {
+        width: 10px;
+        background: var(--color-white-light);
+    }
+    ::-webkit-scrollbar-thumb
+    {
+        background: var(--color-gray);
+        border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover
+    {
+        background: var(--color-gradient-perple);
+    }
+/* ====     colors  Varables And Defalt Setting     ==== */
 
 
 /* ====    background  Class   ==== */
