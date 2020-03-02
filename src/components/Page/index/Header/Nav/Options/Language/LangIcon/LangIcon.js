@@ -11,7 +11,7 @@ export default class LangIcon extends React.Component
             (
                 <React.Fragment>
                     <LangInfoConsumer>
-                        {(value)=><img src={value.img} alt={value.alt}/>}
+                        {(value)=><img src={value.img} alt={value.alt} className='br3'/>}
                     </LangInfoConsumer>
                 </React.Fragment>
             );
