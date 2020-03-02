@@ -5,21 +5,21 @@
 #language:hover
 {
     cursor: pointer;
+    box-shadow: var(--sh3);
 }
 #language img
 {
-    width: 45px;
     height: 45px;
 }
 .langName
 {
-    margin-right: 15px;
+    margin-right: var(--col-1);
 }
 #lagnArrow
 {
     color: var(--color-secound);
     font-size: 20px;
-    margin-right: 20px;
+    margin-right: var(--col-1);
 }
 #LangSelect
 {
