@@ -1,6 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import {LangInfoConsumer} from "../../LangInfoContext/LangInfo";
+    import {GlobalContextConsumer} from "../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
 export default class LangIcon extends React.Component
@@ -10,9 +10,9 @@ export default class LangIcon extends React.Component
         let result =
             (
                 <React.Fragment>
-                    <LangInfoConsumer>
+                    <GlobalContextConsumer>
                         {(value)=><img src={value.img} alt={value.alt} className='br3 col-3'/>}
-                    </LangInfoConsumer>
+                    </GlobalContextConsumer>
                 </React.Fragment>
             );
         return result;

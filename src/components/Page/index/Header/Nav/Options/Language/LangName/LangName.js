@@ -1,6 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import {LangInfoConsumer} from "../../LangInfoContext/LangInfo";
+    import {GlobalContextConsumer} from "../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
 export default class LangName extends React.Component{
@@ -8,9 +8,9 @@ export default class LangName extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <LangInfoConsumer>
+                    <GlobalContextConsumer>
                         {(value)=> <span className='langName col-3'>{value.name}</span>}
-                    </LangInfoConsumer>
+                    </GlobalContextConsumer>
                 </React.Fragment>
             );
             return result;

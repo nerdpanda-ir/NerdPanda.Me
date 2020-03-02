@@ -1,6 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import {LangInfoProvider} from "../LangInfoContext/LangInfo";
+    import {GlobalContextProvider} from "../../../../../../GlobalContext/GlobalContext";
     import LangSelected from "../LangSelected/LangSelected";
 /*====   import Sctipt    ====*/
 
@@ -21,9 +21,9 @@ export default class Language extends React.Component
             (
                 <React.Fragment>
                     <div id='language' className='col-11 br3 boxSBB dirR sh2'>
-                        <LangInfoProvider value={{img : persian , alt : 'persian-lang' , name : 'فارسی'}}>
+                        <GlobalContextProvider value={{img : persian , alt : 'persian-lang' , name : 'فارسی'}}>
                             <LangSelected />
-                        </LangInfoProvider>
+                        </GlobalContextProvider>
                     </div>
                 </React.Fragment>
             );

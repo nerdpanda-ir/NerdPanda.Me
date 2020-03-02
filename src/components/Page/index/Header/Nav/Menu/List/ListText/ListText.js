@@ -1,6 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
-    import  {ListInfoConsumer} from "../../ListInfoContext/ListInfo";
+    import {GlobalContextConsumer} from "../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 export default class ListText extends React.Component
 {
@@ -10,11 +10,11 @@ export default class ListText extends React.Component
         (
             <React.Fragment>
                 <span className='listText'>
-                    <ListInfoConsumer>
+                    <GlobalContextConsumer>
                         {
                             (value)=> value[0]
                         }
-                    </ListInfoConsumer>
+                    </GlobalContextConsumer>
                 </span>
             </React.Fragment>
         );

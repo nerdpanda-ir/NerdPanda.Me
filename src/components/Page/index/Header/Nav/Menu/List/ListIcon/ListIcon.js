@@ -1,6 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
-    import {ListInfoConsumer} from "../../ListInfoContext/ListInfo";
+    import {GlobalContextConsumer} from "../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 export default class ListIcon extends React.Component
 {
@@ -9,9 +9,9 @@ export default class ListIcon extends React.Component
         let result = 
         (
             <React.Fragment>
-                <ListInfoConsumer>
+                <GlobalContextConsumer>
                     {(value)=><i className={"menuIcon "+value[1]}></i>}
-                </ListInfoConsumer>
+                </GlobalContextConsumer>
             </React.Fragment>
         )
         return result;
