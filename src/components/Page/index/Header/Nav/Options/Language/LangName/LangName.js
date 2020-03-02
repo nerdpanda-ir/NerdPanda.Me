@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from "react";
+    import {LangInfoConsumer} from "../../LangInfoContext/LangInfo";
 /*====   import Sctipt    ====*/
 
 export default class LangName extends React.Component{
@@ -7,7 +8,9 @@ export default class LangName extends React.Component{
         let result =
             (
                 <React.Fragment>
-                        name
+                    <LangInfoConsumer>
+                        {(value)=> <span className='langName'>{value.name}</span>}
+                    </LangInfoConsumer>
                 </React.Fragment>
             );
             return result;
