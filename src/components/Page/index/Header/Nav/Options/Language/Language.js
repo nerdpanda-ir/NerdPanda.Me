@@ -20,7 +20,7 @@ export default class Language extends React.Component
         let result =
             (
                 <React.Fragment>
-                    <div id='language' className='col-11 sh2 br3 boxSBB dirR bg-white-light sh3'>
+                    <div id='language' className='col-11 br3 boxSBB dirR sh2'>
                         <LangInfoProvider value={{img : persian , alt : 'persian-lang' , name : 'فارسی'}}>
                             <LangSelected />
                         </LangInfoProvider>
