@@ -2,6 +2,7 @@
     import React from "react";
     import LangSelected from "./LangSelected/LangSelected";
     import LangList from "./Langlist/LangList";
+    import DropDown from "../../../../../../../plugins/DropDown/DropDown";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -17,8 +18,10 @@ export default class Language extends React.Component
             (
                 <React.Fragment>
                     <div id='language' className='col-11 br3 boxSBB dirR sh2 posRel'>
+                        <DropDown setting={{selectid : 'LangSelect' , listId : 'LangList' , arrowId : 'lagnArrow' }}>
                             <LangSelected />
                             <LangList />
+                        </DropDown>
                     </div>
                 </React.Fragment>
             );
