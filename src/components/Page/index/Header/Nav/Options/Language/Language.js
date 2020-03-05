@@ -1,6 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from "react";
     import LangSelected from "./LangSelected/LangSelected";
+    import LangList from "./Langlist/LangList";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -21,6 +22,7 @@ export default class Language extends React.Component
                 <React.Fragment>
                     <div id='language' className='col-11 br3 boxSBB dirR sh2 posRel'>
                             <LangSelected />
+                            <LangList />
                     </div>
                 </React.Fragment>
             );
