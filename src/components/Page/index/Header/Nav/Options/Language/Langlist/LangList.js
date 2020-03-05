@@ -5,6 +5,10 @@
 
 /*====   import Sctipt    ====*/
 
+/*====   import Style    ====*/
+    import '../../../../../../../../css/Page/index/Header/Nav/Options/Language/LangList/LangList.css'
+/*====   import Style    ====*/
+
 
 /*====   import Files    ====*/
     import persian from '../../../../../../../../img/global/Lang/iran.svg';
