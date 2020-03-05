@@ -1,11 +1,11 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import LangRow from "../Language/LangRow/LangRow";
-    import Arrow from "../Language/Arrow/Arrow";
+    import LangRow from "../LangRow/LangRow";
+    import Arrow from "../Arrow/Arrow";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
-    import '../../../../../../../css/Page/index/Header/Nav/Options/Language/LangSelect/LangSelect.css';
+    import '../../../../../../../../css/Page/index/Header/Nav/Options/Language/LangSelect/LangSelect.css';
 /*====   import Style    ====*/
 
 

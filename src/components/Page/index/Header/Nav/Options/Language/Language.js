@@ -1,7 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from "react";
     import {GlobalContextProvider} from "../../../../../../GlobalContext/GlobalContext";
-    import LangSelected from "../LangSelected/LangSelected";
+    import LangSelected from "./LangSelected/LangSelected";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
