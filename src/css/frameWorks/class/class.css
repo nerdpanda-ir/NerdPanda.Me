@@ -91,6 +91,10 @@
     {
         display: inline-block;
     }
+    .disN
+    {
+        display: none;
+    }
     .boxSBB
     {
         box-sizing: border-box;
