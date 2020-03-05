@@ -24,7 +24,7 @@ export default class LangList extends React.Component
         let result =
             (
                 <React.Fragment>
-                    <ul className='posAb col-12 bg-white sh2  br3 boxSBB' id='LangList'>
+                    <ul className='posAb col-12 bg-white sh2  br3 boxSBB disN' id='LangList'>
                         <GlobalContextProvider value={{img : english , alt : 'English-lang' , name : 'English'}}>
                             <List />
                         </GlobalContextProvider>
