@@ -1,0 +1,8 @@
+#LangList li{
+    padding-right: var(--col-2);
+
+}
+#LangList li:hover
+{
+    background: var(--color-white-light);
+}
