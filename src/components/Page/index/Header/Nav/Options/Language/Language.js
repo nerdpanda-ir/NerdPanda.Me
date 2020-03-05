@@ -8,11 +8,7 @@
     import '../../../../../../../css/Page/index/Header/Nav/Options/Language/Language.css';
 /*====   import Style    ====*/
 
-/*====   import Files    ====*/
-    import persian from '../../../../../../../img/global/Lang/iran.svg';
-    import english from '../../../../../../../img/global/Lang/uk.svg';
-    import arab from '../../../../../../../img/global/Lang/ar.svg';
-/*====   import Files    ====*/
+
 
 export default class Language extends React.Component
 {
