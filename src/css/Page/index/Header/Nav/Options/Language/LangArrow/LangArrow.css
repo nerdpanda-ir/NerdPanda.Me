@@ -4,3 +4,7 @@
     font-size: 20px;
     margin-right: var(--col-1);
 }
+.fa-sort-up
+{
+    vertical-align: -10px;
+}
