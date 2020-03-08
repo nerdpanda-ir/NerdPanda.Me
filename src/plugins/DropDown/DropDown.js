@@ -12,6 +12,7 @@ export default class DropDown extends React.Component{
                 list : {id : 'list'} ,
                 callBacks : {selecting : null}
             }
+         this.elements = {};
     }
     static getDerivedStateFromProps(props,state)
     {
