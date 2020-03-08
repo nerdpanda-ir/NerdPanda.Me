@@ -32,4 +32,10 @@ export default class DropDown extends React.Component{
         return result;
     }
 
+    /*====  fetch setting  ====*/
+    fetchSetting()
+    {
+
+    }
+    /*====  fetch setting  ====*/
 }
