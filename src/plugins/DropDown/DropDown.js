@@ -103,10 +103,7 @@ export default class DropDown extends React.Component{
     /*====  EventHandlers  ====*/
         listOpenEventHandler=()=>
         {
-            if (!this.getListOpenStatus)
-                this.openList();
-            else if (this.getListOpenStatus)
-                this.closeList();
+            this.toggleOpenList(this.getListOpenStatus)
 
         }
 
@@ -122,6 +119,18 @@ export default class DropDown extends React.Component{
     {
         this.elements.list.listElement.classList.remove(((this.state.setting.list.openClass !==undefined && this.state.setting.list.openClass.length!==0 ) ? this.state.setting.list.openClass : this.setting.list.openClass))
         this.elements.list.listElement.classList.add(((this.state.setting.list.closeClass !==undefined && this.state.setting.list.closeClass.length!==0 ) ? this.state.setting.list.closeClass : this.setting.list.closeClass))
+    }
+    toggleOpenList(status)
+    {
+        if (status!==undefined && status!==null)
+        {
+            if (!status)
+                this.openList();
+            else if (status)
+                this.closeList();
+        }
+        else
+            window.console.error('argument is not valid !!! ');
     }
     /*====  DoWorks  ====*/
 }
