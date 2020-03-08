@@ -6,4 +6,8 @@ export default class DropDown extends React.Component{
         super();
         this.state = {};
     }
+    static getDerivedStateFromProps(props,state)
+    {
+        window.console.log(props,state)
+    }
 }
