@@ -17,7 +17,9 @@ export default class DropDown extends React.Component{
         let result =
             (
                 <React.Fragment>
-
+                    {
+                        this.state.body
+                    }
                 </React.Fragment>
             );
         return result;
