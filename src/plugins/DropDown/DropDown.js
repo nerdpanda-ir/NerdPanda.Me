@@ -36,7 +36,7 @@ export default class DropDown extends React.Component{
         this.fetchSetting();
     }
     componentDidUpdate() {
-        window.console.log(this.state)
+        window.console.log(this.state);
     }
     /*====  lyfecycle Methods   ====*/
 
@@ -51,7 +51,24 @@ export default class DropDown extends React.Component{
     }
     /*====  fetch setting  ====*/
 
+
     /*====  getters ====*/
-        
+        get getSelectElement()
+        {
+            let element = false;
+            try {
+                let query = `#${((this.state.setting.selected.id!==undefined && this.state.setting.selected.id.length!==0) ? this.state.setting.selected.id : this.setting.selected.id)}`;
+                element =window.document.body.querySelector(query);
+                if (element===null)
+                    throw 'not Found Element -> '+query;
+            }
+            catch (e) {
+                window.console.error(e);
+                element = false;
+            }
+            finally {
+                return element;
+            }
+        }
     /*====  getters ====*/
 }
