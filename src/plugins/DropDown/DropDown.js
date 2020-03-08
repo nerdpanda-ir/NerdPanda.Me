@@ -8,7 +8,10 @@ export default class DropDown extends React.Component{
     }
     static getDerivedStateFromProps(props,state)
     {
-        window.console.log(props,state)
+        if (!state.hasOwnProperty('body') && !state.hasOwnProperty('setting'))
+            return  {body : props.children , setting : props.setting};
+        else
+            return false
     }
     render() {
         let result =
@@ -17,6 +20,7 @@ export default class DropDown extends React.Component{
 
                 </React.Fragment>
             );
-        return result; 
+        return result;
     }
+
 }
