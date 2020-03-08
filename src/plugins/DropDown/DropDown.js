@@ -81,7 +81,7 @@ export default class DropDown extends React.Component{
         }
         get getListOpenStatus()
         {
-            return this.elements.list.listElement.classList.contains(this.state.setting.list.openClass);
+            return this.elements.list.listElement.classList.contains(((this.state.setting.list.openClass !==undefined && this.state.setting.list.openClass.length!==0 ) ? this.state.setting.list.openClass : this.setting.list.openClass));
         }
     /*====  getters ====*/
 
@@ -103,10 +103,25 @@ export default class DropDown extends React.Component{
     /*====  EventHandlers  ====*/
         listOpenEventHandler=()=>
         {
-            window.console.log(this.getListOpenStatus)
+            if (!this.getListOpenStatus)
+                this.openList();
+            else if (this.getListOpenStatus)
+                this.closeList();
+
         }
 
     /*====  EventHandlers  ====*/
 
-
+    /*====  DoWorks  ====*/
+    openList()
+    {
+        this.elements.list.listElement.classList.remove(((this.state.setting.list.closeClass !==undefined && this.state.setting.list.closeClass.length!==0 ) ? this.state.setting.list.closeClass : this.setting.list.closeClass))
+        this.elements.list.listElement.classList.add(((this.state.setting.list.openClass !==undefined && this.state.setting.list.openClass.length!==0 ) ? this.state.setting.list.openClass : this.setting.list.openClass))
+    }
+    closeList()
+    {
+        this.elements.list.listElement.classList.remove(((this.state.setting.list.openClass !==undefined && this.state.setting.list.openClass.length!==0 ) ? this.state.setting.list.openClass : this.setting.list.openClass))
+        this.elements.list.listElement.classList.add(((this.state.setting.list.closeClass !==undefined && this.state.setting.list.closeClass.length!==0 ) ? this.state.setting.list.closeClass : this.setting.list.closeClass))
+    }
+    /*====  DoWorks  ====*/
 }
