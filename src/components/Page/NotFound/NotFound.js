@@ -8,7 +8,7 @@ export default class NotFound extends React.Component
         let result = 
         (
             <React.Fragment>
-                <h1>  404 Not Found </h1>
+                <h1>گشتم نبود نگرد نیست !!!!‌ </h1>
             </React.Fragment>
         );
         return result; 
