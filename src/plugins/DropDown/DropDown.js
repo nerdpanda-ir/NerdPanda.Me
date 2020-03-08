@@ -12,7 +12,10 @@ export default class DropDown extends React.Component{
                 list : {id : 'list'} ,
                 callBacks : {selecting : null}
             }
-         this.elements = {};
+         this.elements = {
+             selectElement : '' ,
+             list : {listElement : '' , itemElements : ''}
+         };
     }
     static getDerivedStateFromProps(props,state)
     {
@@ -38,6 +41,9 @@ export default class DropDown extends React.Component{
     }
     componentDidUpdate() {
         window.console.log(this.state);
+        this.elements.selectElement = this.getElement(this.state.setting.selected.id,this.setting.selected.id);
+        this.elements.list.listElement  = this.getElement(this.state.setting.list.id,this.setting.list.id);
+        this.elements.list.itemElements  = this.getElement(this.state.setting.list.id+' li', this.setting.list.id+' li',true);
     }
     /*====  lyfecycle Methods   ====*/
 
@@ -54,21 +60,21 @@ export default class DropDown extends React.Component{
 
 
     /*====  getters ====*/
-        get getSelectElement()
+        getElement(query,secoundQuery,multiple = false)
         {
-            let element = false;
+            let result ;
             try {
-                let query = `#${((this.state.setting.selected.id!==undefined && this.state.setting.selected.id.length!==0) ? this.state.setting.selected.id : this.setting.selected.id)}`;
-                element =window.document.body.querySelector(query);
-                if (element===null)
+                query = `#${((query!==undefined && query.length !==0) ? query : secoundQuery)}`;
+                result = ((!multiple)? window.document.body.querySelector(query) : window.document.body.querySelectorAll(query));
+                if (result===null)
                     throw 'not Found Element -> '+query;
             }
             catch (e) {
                 window.console.error(e);
-                element = false;
+                result = false;
             }
             finally {
-                return element;
+                return result;
             }
         }
     /*====  getters ====*/
