@@ -10,7 +10,7 @@ export default class DropDown extends React.Component{
                 globalSetting : {openListEvent : 'click'},
                 arrow : {id : 'arrow' , openClass : 'fa-sort-up' , closeClass : 'fa-sort-down'},
                 selected : {id : 'select' , defaltSelect : 0},
-                list : {id : 'list'} ,
+                list : {id : 'list' , closeClass : 'disN' , openClass : 'disIB'} ,
                 callBacks : {selecting : null}
             }
          this.elements = {
@@ -79,6 +79,10 @@ export default class DropDown extends React.Component{
                 return result;
             }
         }
+        get getListOpenStatus()
+        {
+            return this.elements.list.listElement.classList.contains(this.state.setting.list.openClass);
+        }
     /*====  getters ====*/
 
 
@@ -97,9 +101,9 @@ export default class DropDown extends React.Component{
 
 
     /*====  EventHandlers  ====*/
-        listOpenEventHandler()
+        listOpenEventHandler=()=>
         {
-            window.console.log('event handler ')
+            window.console.log(this.getListOpenStatus)
         }
 
     /*====  EventHandlers  ====*/
