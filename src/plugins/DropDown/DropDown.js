@@ -7,6 +7,7 @@ export default class DropDown extends React.Component{
         this.state = {};
         this.setting =
             {
+                globalSetting : {openListEvent : 'click'},
                 arrow : {id : 'arrow' , openClass : 'fa-sort-up' , closeClass : 'fa-sort-down'},
                 selected : {id : 'select' , defaltSelect : 0},
                 list : {id : 'list'} ,
@@ -44,6 +45,7 @@ export default class DropDown extends React.Component{
         this.elements.selectElement = this.getElement(this.state.setting.selected.id,this.setting.selected.id);
         this.elements.list.listElement  = this.getElement(this.state.setting.list.id,this.setting.list.id);
         this.elements.list.itemElements  = this.getElement(this.state.setting.list.id+' li', this.setting.list.id+' li',true);
+        this.eventSetter()
     }
     /*====  lyfecycle Methods   ====*/
 
@@ -78,4 +80,29 @@ export default class DropDown extends React.Component{
             }
         }
     /*====  getters ====*/
+
+
+
+    /*====  setters ====*/
+        eventSetter()
+        {
+            this.setOpenListEvent();
+        }
+        setOpenListEvent()
+        {
+            this.elements.selectElement.addEventListener( ((this.state.setting.globalSetting.openListEvent!==undefined && this.state.setting.globalSetting.openListEvent.length!==0) ? this.state.setting.globalSetting.openListEvent: this.setting.globalSetting.openListEvent) , this.listOpenEventHandler);
+        }
+
+    /*====  setters ====*/
+
+
+    /*====  EventHandlers  ====*/
+        listOpenEventHandler()
+        {
+            window.console.log('event handler ')
+        }
+
+    /*====  EventHandlers  ====*/
+
+
 }
