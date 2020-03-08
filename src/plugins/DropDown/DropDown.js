@@ -15,8 +15,8 @@ export default class DropDown extends React.Component{
     }
     static getDerivedStateFromProps(props,state)
     {
-        if (!state.hasOwnProperty('body') && !state.hasOwnProperty('setting'))
-            return  {body : props.children , setting : props.setting};
+        if (!state.hasOwnProperty('body') && !state.hasOwnProperty('setting') )
+            return  {body : props.children , setting : ((props.setting!==undefined) ? props.setting : {})};
         else
             return false
     }
@@ -31,11 +31,27 @@ export default class DropDown extends React.Component{
             );
         return result;
     }
+    /*====  lyfecycle Methods   ====*/
+    componentDidMount() {
+        this.fetchSetting();
+    }
+    componentDidUpdate() {
+        window.console.log(this.state)
+    }
+    /*====  lyfecycle Methods   ====*/
 
     /*====  fetch setting  ====*/
     fetchSetting()
     {
-
+        let setting = {...this.state.setting};
+        for (let settingKey in this.setting)
+            if (!this.state.setting.hasOwnProperty(settingKey))
+                setting[settingKey] =this.setting[settingKey];
+         this.setState({setting})
     }
     /*====  fetch setting  ====*/
+
+    /*====  getters ====*/
+        
+    /*====  getters ====*/
 }
