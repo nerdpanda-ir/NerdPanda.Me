@@ -15,7 +15,8 @@ export default class DropDown extends React.Component{
             }
          this.elements = {
              selectElement : '' ,
-             list : {listElement : '' , itemElements : ''}
+             list : {listElement : '' , itemElements : ''},
+             arrow : ''
          };
     }
     static getDerivedStateFromProps(props,state)
@@ -42,12 +43,10 @@ export default class DropDown extends React.Component{
     }
     componentDidUpdate() {
         window.console.log(this.state);
-/*        this.elements.selectElement = this.getElement(((this.state.setting.selected.id!==undefined && this.state.setting.selected.id.length !==0) ? this.state.setting.selected.id : this.setting.selected.id));
-        this.elements.list.listElement  = this.getElement(((this.state.setting.list.id!==undefined && this.state.setting.list.id.length !==0) ? this.state.setting.list.id :this.setting.list.id));
-        this.elements.list.itemElements  = this.getElement(((this.state.setting.list.id!==undefined && this.state.setting.list.id !==0) ?this.state.setting.list.id+' li' :this.setting.list.id+' li'),true);*/
         this.elements.selectElement = this.getElement(this.getTrueQuery(this.state.setting.selected.id,this.setting.selected.id));
         this.elements.list.listElement  = this.getElement(this.getTrueQuery(this.state.setting.list.id,this.setting.list.id));
         this.elements.list.itemElements  = this.getElement(this.getTrueQuery(this.state.setting.list.id,this.setting.list.id)+' li',true);
+        this.elements.arrow = this.getElement(this.getTrueQuery(this.state.setting.arrow.id,this.setting.arrow.id));
         this.eventSetter()
     }
     /*====  lyfecycle Methods   ====*/
