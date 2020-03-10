@@ -22,9 +22,6 @@ export default class LangSelected extends React.Component{
         let result = (
             <React.Fragment>
                 <section id='LangSelect' className='h100 textCenter boxSBB'>
-                    <GlobalContextProvider value={{img : persian , alt : 'persian-lang' , name : 'فارسی'}}>
-                        <LangRow />
-                    </GlobalContextProvider>
                     <Arrow />
                 </section>
             </React.Fragment>
