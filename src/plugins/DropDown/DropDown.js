@@ -42,9 +42,9 @@ export default class DropDown extends React.Component{
     }
     componentDidUpdate() {
         window.console.log(this.state);
-        this.elements.selectElement = this.getElement(this.state.setting.selected.id,this.setting.selected.id);
-        this.elements.list.listElement  = this.getElement(this.state.setting.list.id,this.setting.list.id);
-        this.elements.list.itemElements  = this.getElement(this.state.setting.list.id+' li', this.setting.list.id+' li',true);
+        this.elements.selectElement = this.getElement(((this.state.setting.selected.id!==undefined && this.state.setting.selected.id.length !==0) ? this.state.setting.selected.id : this.setting.selected.id));
+        this.elements.list.listElement  = this.getElement(((this.state.setting.list.id!==undefined && this.state.setting.list.id.length !==0) ? this.state.setting.list.id :this.setting.list.id));
+        this.elements.list.itemElements  = this.getElement(((this.state.setting.list.id!==undefined && this.state.setting.list.id !==0) ?this.state.setting.list.id+' li' :this.setting.list.id+' li'),true);
         this.eventSetter()
     }
     /*====  lyfecycle Methods   ====*/
@@ -62,11 +62,11 @@ export default class DropDown extends React.Component{
 
 
     /*====  getters ====*/
-        getElement(query,secoundQuery,multiple = false)
+        getElement(query,multiple = false)
         {
             let result ;
             try {
-                query = `#${((query!==undefined && query.length !==0) ? query : secoundQuery)}`;
+                query = `#${query}`;
                 result = ((!multiple)? window.document.body.querySelector(query) : window.document.body.querySelectorAll(query));
                 if (result===null)
                     throw 'not Found Element -> '+query;
@@ -112,12 +112,12 @@ export default class DropDown extends React.Component{
     /*====  DoWorks  ====*/
     openList()
     {
-        this.elements.list.listElement.classList.remove(((this.state.setting.list.closeClass !==undefined && this.state.setting.list.closeClass.length!==0 ) ? this.state.setting.list.closeClass : this.setting.list.closeClass))
+        this.elements.list.listElement.classList.remove(((this.state.setting.list.closeClass !==undefined && this.state.setting.list.closeClass.length!==0 ) ? this.state.setting.list.closeClass : this.setting.list.closeClass));
         this.elements.list.listElement.classList.add(((this.state.setting.list.openClass !==undefined && this.state.setting.list.openClass.length!==0 ) ? this.state.setting.list.openClass : this.setting.list.openClass))
     }
     closeList()
     {
-        this.elements.list.listElement.classList.remove(((this.state.setting.list.openClass !==undefined && this.state.setting.list.openClass.length!==0 ) ? this.state.setting.list.openClass : this.setting.list.openClass))
+        this.elements.list.listElement.classList.remove(((this.state.setting.list.openClass !==undefined && this.state.setting.list.openClass.length!==0 ) ? this.state.setting.list.openClass : this.setting.list.openClass));
         this.elements.list.listElement.classList.add(((this.state.setting.list.closeClass !==undefined && this.state.setting.list.closeClass.length!==0 ) ? this.state.setting.list.closeClass : this.setting.list.closeClass))
     }
     toggleOpenList(status)
