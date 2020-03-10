@@ -14,9 +14,9 @@ export default class DropDown extends React.Component{
                 callBacks : {selecting : null}
             }
          this.elements = {
-             selectElement : '' ,
-             list : {listElement : '' , itemElements : ''},
-             arrow : ''
+             selectElement : null ,
+             list : {listElement : null, itemElements : null},
+             arrow : null
          };
     }
     static getDerivedStateFromProps(props,state)
@@ -46,7 +46,8 @@ export default class DropDown extends React.Component{
         this.elements.selectElement = this.getElement(this.getTrueQuery(this.state.setting.selected.id,this.setting.selected.id));
         this.elements.list.listElement  = this.getElement(this.getTrueQuery(this.state.setting.list.id,this.setting.list.id));
         this.elements.list.itemElements  = this.getElement(this.getTrueQuery(this.state.setting.list.id,this.setting.list.id)+' li',true);
-        this.elements.arrow = this.getElement(this.getTrueQuery(this.state.setting.arrow.id,this.setting.arrow.id));
+        if (this.state.setting.arrow)
+            this.elements.arrow = this.getElement(this.getTrueQuery(this.state.setting.arrow.id,this.setting.arrow.id));
         this.eventSetter()
     }
     /*====  lyfecycle Methods   ====*/
@@ -109,22 +110,51 @@ export default class DropDown extends React.Component{
     /*====  EventHandlers  ====*/
         listOpenEventHandler=()=>
         {
-            this.toggleOpenList(this.getListOpenStatus)
+           this.doToggle(this.getListOpenStatus)
 
         }
 
     /*====  EventHandlers  ====*/
 
     /*====  DoWorks  ====*/
+    doToggle(status)
+    {
+        this.toggleOpenList(status);
+        if (this.elements.arrow!==null)
+            this.toggleOpenArrow(status);
+    }
     openList()
     {
-        this.elements.list.listElement.classList.remove(((this.state.setting.list.closeClass !==undefined && this.state.setting.list.closeClass.length!==0 ) ? this.state.setting.list.closeClass : this.setting.list.closeClass));
-        this.elements.list.listElement.classList.add(((this.state.setting.list.openClass !==undefined && this.state.setting.list.openClass.length!==0 ) ? this.state.setting.list.openClass : this.setting.list.openClass))
+        this.elements.list.listElement.classList.remove(this.getTrueQuery(this.state.setting.list.closeClass,this.setting.list.closeClass));
+        this.elements.list.listElement.classList.add(this.getTrueQuery(this.state.setting.list.openClass,this.setting.list.openClass));
+
     }
     closeList()
     {
-        this.elements.list.listElement.classList.remove(((this.state.setting.list.openClass !==undefined && this.state.setting.list.openClass.length!==0 ) ? this.state.setting.list.openClass : this.setting.list.openClass));
-        this.elements.list.listElement.classList.add(((this.state.setting.list.closeClass !==undefined && this.state.setting.list.closeClass.length!==0 ) ? this.state.setting.list.closeClass : this.setting.list.closeClass))
+        this.elements.list.listElement.classList.remove(this.getTrueQuery(this.state.setting.list.openClass,this.setting.list.openClass));
+        this.elements.list.listElement.classList.add(this.getTrueQuery(this.state.setting.list.closeClass,this.setting.list.closeClass));
+    }
+    openArrow()
+    {
+        this.elements.arrow.classList.remove(this.getTrueQuery(this.state.setting.arrow.closeClass, this.setting.arrow.closeClass));
+        this.elements.arrow.classList.add(this.getTrueQuery(this.state.setting.arrow.openClass, this.setting.arrow.openClass));
+    }
+    closeArrow()
+    {
+        this.elements.arrow.classList.remove(this.getTrueQuery(this.state.setting.arrow.openClass, this.setting.arrow.openClass));
+        this.elements.arrow.classList.add(this.getTrueQuery(this.state.setting.arrow.closeClass, this.setting.arrow.closeClass));
+    }
+    toggleOpenArrow(status)
+    {
+        if (status!==undefined && status!==null)
+        {
+            if (!status)
+                this.openArrow();
+            else if (status)
+                this.closeArrow();
+        }
+        else
+            window.console.error('argument is not valid !!! ');
     }
     toggleOpenList(status)
     {
