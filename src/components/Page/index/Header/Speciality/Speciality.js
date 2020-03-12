@@ -6,6 +6,7 @@
 
 /*====   import Styles    ====*/
     import '../../../../../css/Page/index/Header/Speciality/Speciality.css'
+import Title from "../../../../items/Title/Title";
 /*====   import Styles    ====*/
 export default class Speciality extends React.Component{
     render() {
@@ -15,7 +16,9 @@ export default class Speciality extends React.Component{
                     <section id='speciality' className='boxSBB'>
                         <Container>
                             <Col className='col-6'>
-                                hello im content
+                                <Title className='color-secound' tagName='h1'>
+                                    فول استک دولوپر
+                                </Title>
                             </Col>
                         </Container>
                     </section>
