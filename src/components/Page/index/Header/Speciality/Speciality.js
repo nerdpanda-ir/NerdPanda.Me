@@ -12,7 +12,7 @@ export default class Speciality extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <section id='speciality'>
+                    <section id='speciality' className='boxSBB'>
                         <Container>
                             asdad
                         </Container>
