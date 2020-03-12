@@ -2,7 +2,7 @@
 import React from 'react';
 /*====   import Sctipt    ====*/
 
-export default class Title extends React.Component{
+export default class Text extends React.Component{
     constructor() {
         super();
         this.state = {tagName : '' , body : '' , classList : ''}
