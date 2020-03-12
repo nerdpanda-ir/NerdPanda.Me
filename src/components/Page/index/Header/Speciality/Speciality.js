@@ -1,7 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
     import Container from "../../../../Container/Container";
-
+    import Col from "../../../../items/Col/Col";
 /*====   import Sctipt    ====*/
 
 /*====   import Styles    ====*/
@@ -14,7 +14,9 @@ export default class Speciality extends React.Component{
                 <React.Fragment>
                     <section id='speciality' className='boxSBB'>
                         <Container>
-                            asdad
+                            <Col className='col-6'>
+                                hello im content
+                            </Col>
                         </Container>
                     </section>
                 </React.Fragment>
