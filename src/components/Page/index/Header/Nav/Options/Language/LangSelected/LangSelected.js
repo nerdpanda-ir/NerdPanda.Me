@@ -1,8 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import LangRow from "../LangRow/LangRow";
     import Arrow from "../Arrow/Arrow";
-    import {GlobalContextProvider} from "../../../../../../../GlobalContext/GlobalContext";
 
 /*====   import Sctipt    ====*/
 
@@ -11,9 +9,7 @@
 /*====   import Style    ====*/
 
 
-/*====   import Style    ====*/
-    import persian from "../../../../../../../../img/global/Lang/iran.svg";
-/*====   import Style    ====*/
+
 
 
 
