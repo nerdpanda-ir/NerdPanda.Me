@@ -1,7 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from "react";  
     import Container from '../../../../Container/Container'
-    import Logo from '../../../../Logo/Logo'
+    import Logo from "../../../../items/Logo/Logo";
     import Menu from './Menu/Menu';
     import Options from "./Options/Options";
 
