@@ -18,7 +18,7 @@ export default class Language extends React.Component
             (
                 <React.Fragment>
                     <div id='language' className='col-11 br3 boxSBB dirR sh2 posRel'>
-                        <DropDown>
+                        <DropDown setting={{arrow: {id: 'lagnArrow'}, selected: {id: 'LangSelect' ,  imgClass: 'langIcon' , defaltSelect : 1 }, list: {id: 'LangList'}}}>
                             <LangSelected />
                             <LangList />
                         </DropDown>
