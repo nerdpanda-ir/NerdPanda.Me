@@ -9,14 +9,15 @@ export default class DropDown extends React.Component{
             {
                 globalSetting : {openListEvent : 'click'},
                 arrow : {id : 'arrow' , openClass : 'fa-sort-up' , closeClass : 'fa-sort-down'},
-                selected : {id : 'select' , defaltSelect : 0},
-                list : {id : 'list' , closeClass : 'disN' , openClass : 'disIB'} ,
+                selected : {id : 'select' , defaltSelect : 0 },
+                list : {id : 'list' , closeClass : 'disN' , openClass : 'disIB' , lablelClass : 'langName' , imgClass : 'langIcon'} ,
                 callBacks : {selecting : null}
             }
          this.elements = {
              selectElement : null ,
-             list : {listElement : null, itemElements : null},
-             arrow : null
+             list : {listElement : null, itemElements : null },
+             arrow : null ,
+             clickedElement : {element : null , index : null}
          };
     }
     static getDerivedStateFromProps(props,state)
@@ -41,14 +42,16 @@ export default class DropDown extends React.Component{
     componentDidMount() {
         this.fetchSetting();
     }
+
     componentDidUpdate() {
-        window.console.log(this.state);
-        this.elements.selectElement = this.getElement(this.getTrueQuery(this.state.setting.selected.id,this.setting.selected.id));
-        this.elements.list.listElement  = this.getElement(this.getTrueQuery(this.state.setting.list.id,this.setting.list.id));
-        this.elements.list.itemElements  = this.getElement(this.getTrueQuery(this.state.setting.list.id,this.setting.list.id)+' li',true);
+        this.elements.selectElement = this.getElement(this.getRealValue(this.state.setting.selected.id,this.setting.selected.id));
+        this.elements.list.listElement  = this.getElement(this.getRealValue(this.state.setting.list.id,this.setting.list.id));
+        this.elements.list.itemElements  = this.getElement(this.getRealValue(this.state.setting.list.id,this.setting.list.id)+' li',true);
         if (this.state.setting.arrow)
-            this.elements.arrow = this.getElement(this.getTrueQuery(this.state.setting.arrow.id,this.setting.arrow.id));
-        this.eventSetter()
+            this.elements.arrow = this.getElement(this.getRealValue(this.state.setting.arrow.id,this.setting.arrow.id));
+        if (this.elements.clickedElement.index===null)
+            this.doSelectItem(this.state.setting.selected.defaltSelect);
+        this.eventSetter();
     }
     /*====  lyfecycle Methods   ====*/
 
@@ -59,6 +62,8 @@ export default class DropDown extends React.Component{
         for (let settingKey in this.setting)
             if (!this.state.setting.hasOwnProperty(settingKey))
                 setting[settingKey] =this.setting[settingKey];
+         if (!setting.selected.hasOwnProperty('defaltSelect'))
+             setting.selected.defaltSelect = this.setting.selected.defaltSelect;
          this.setState({setting})
     }
     /*====  fetch setting  ====*/
@@ -82,13 +87,33 @@ export default class DropDown extends React.Component{
                 return result;
             }
         }
-        getTrueQuery(query,secondQuery)
+        getElementNumberOfParent()
+        {
+           return  window.Object.values(this.elements.list.itemElements).findIndex(this.findIndexElement, this);
+        }
+        findIndexElement(item)
+        {
+            return this.elements.clickedElement.element===item;
+        }
+        getRealValue(query, secondQuery)
         {
             return ((query!==undefined && query.length!==0)  ? query : secondQuery);
         }
         get getListOpenStatus()
         {
             return this.elements.list.listElement.classList.contains(((this.state.setting.list.openClass !==undefined && this.state.setting.list.openClass.length!==0 ) ? this.state.setting.list.openClass : this.setting.list.openClass));
+        }
+        getListLable(element)
+        {
+            return element.querySelector('.'+this.getRealValue(this.state.setting.list.lablelClass,this.setting.list.lablelClass));
+        }
+        getListIcon(element)
+        {
+            return element.querySelector('.'+this.getRealValue(this.state.setting.list.imgClass,this.setting.list.imgClass));
+        }
+        get getSectedNumberOfChilds()
+        {
+            return this.elements.selectElement.children.length
         }
     /*====  getters ====*/
 
@@ -98,12 +123,20 @@ export default class DropDown extends React.Component{
         eventSetter()
         {
             this.setOpenListEvent();
+            this.setListItemEvent();
         }
         setOpenListEvent()
         {
             this.elements.selectElement.addEventListener( ((this.state.setting.globalSetting.openListEvent!==undefined && this.state.setting.globalSetting.openListEvent.length!==0) ? this.state.setting.globalSetting.openListEvent: this.setting.globalSetting.openListEvent) , this.listOpenEventHandler);
         }
-
+        setListItemEvent()
+        {
+            this.elements.list.itemElements.forEach(this.listItemIteration,this);
+        }
+        listItemIteration(element)
+        {
+            element.addEventListener('click',this.itemEventHandler);
+        }
     /*====  setters ====*/
 
 
@@ -111,8 +144,16 @@ export default class DropDown extends React.Component{
         listOpenEventHandler=()=>
         {
            this.doToggle(this.getListOpenStatus)
-
         }
+        itemEventHandler=(ev)=>
+        {
+            this.elements.clickedElement.element = ev.currentTarget;
+            this.elements.clickedElement.index = this.getElementNumberOfParent(this.elements.clickedElement.element);
+            if (this.state.setting.selected.defaltSelect!==this.elements.clickedElement.index)
+                this.doSelectItem(this.elements.clickedElement.index);
+            this.doToggle(this.getListOpenStatus);
+        }
+
 
     /*====  EventHandlers  ====*/
 
@@ -125,24 +166,24 @@ export default class DropDown extends React.Component{
     }
     openList()
     {
-        this.elements.list.listElement.classList.remove(this.getTrueQuery(this.state.setting.list.closeClass,this.setting.list.closeClass));
-        this.elements.list.listElement.classList.add(this.getTrueQuery(this.state.setting.list.openClass,this.setting.list.openClass));
+        this.elements.list.listElement.classList.remove(this.getRealValue(this.state.setting.list.closeClass,this.setting.list.closeClass));
+        this.elements.list.listElement.classList.add(this.getRealValue(this.state.setting.list.openClass,this.setting.list.openClass));
 
     }
     closeList()
     {
-        this.elements.list.listElement.classList.remove(this.getTrueQuery(this.state.setting.list.openClass,this.setting.list.openClass));
-        this.elements.list.listElement.classList.add(this.getTrueQuery(this.state.setting.list.closeClass,this.setting.list.closeClass));
+        this.elements.list.listElement.classList.remove(this.getRealValue(this.state.setting.list.openClass,this.setting.list.openClass));
+        this.elements.list.listElement.classList.add(this.getRealValue(this.state.setting.list.closeClass,this.setting.list.closeClass));
     }
     openArrow()
     {
-        this.elements.arrow.classList.remove(this.getTrueQuery(this.state.setting.arrow.closeClass, this.setting.arrow.closeClass));
-        this.elements.arrow.classList.add(this.getTrueQuery(this.state.setting.arrow.openClass, this.setting.arrow.openClass));
+        this.elements.arrow.classList.remove(this.getRealValue(this.state.setting.arrow.closeClass, this.setting.arrow.closeClass));
+        this.elements.arrow.classList.add(this.getRealValue(this.state.setting.arrow.openClass, this.setting.arrow.openClass));
     }
     closeArrow()
     {
-        this.elements.arrow.classList.remove(this.getTrueQuery(this.state.setting.arrow.openClass, this.setting.arrow.openClass));
-        this.elements.arrow.classList.add(this.getTrueQuery(this.state.setting.arrow.closeClass, this.setting.arrow.closeClass));
+        this.elements.arrow.classList.remove(this.getRealValue(this.state.setting.arrow.openClass, this.setting.arrow.openClass));
+        this.elements.arrow.classList.add(this.getRealValue(this.state.setting.arrow.closeClass, this.setting.arrow.closeClass));
     }
     toggleOpenArrow(status)
     {
@@ -168,5 +209,31 @@ export default class DropDown extends React.Component{
         else
             window.console.error('argument is not valid !!! ');
     }
+    doSelectItem(key)
+    {
+        if (this.getSectedNumberOfChilds>1)
+            this.doEmptySelect();
+        let element = this.elements.list.itemElements[key];
+        let lable = this.getListLable(element).cloneNode(true);
+        let icon = this.getListIcon(element).cloneNode(true);
+        this.elements.selectElement.prepend(lable);
+        this.elements.selectElement.prepend(icon);
+        if (this.elements.clickedElement.index!==null)
+        {
+            let setting = {...this.state.setting};
+            setting.selected.defaltSelect = key;
+            this.setState({...this.state,setting});
+        }
+        if(typeof this.state.setting.callBacks.selecting==='function')
+            this.state.setting.callBacks.selecting();
+    }
+    doEmptySelect()
+    {
+        let icon =this.getListIcon(this.elements.selectElement);
+        let lable =this.getListLable(this.elements.selectElement);
+        icon.remove();
+        lable.remove();
+    }
+
     /*====  DoWorks  ====*/
 }
