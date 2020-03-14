@@ -5,11 +5,11 @@ import React from 'react';
 export default class Text extends React.Component{
     constructor() {
         super();
-        this.state = {tagName : '' , body : '' , classList : ''}
+        this.state = {tagName : '' , body : '' , classList : '' , id : ''}
     }
     static getDerivedStateFromProps(props)
     {
-        return {tagName : props.tagName , classList:  props.className , body:  props.children};
+        return {tagName : props.tagName , classList:  props.className , body:  props.children , id : props.id };
     }
     render() {
 
@@ -17,7 +17,7 @@ export default class Text extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <Tag className={this.state.classList}> {this.state.body} </Tag>
+                    <Tag className={this.state.classList} id={this.state.id}> {this.state.body} </Tag>
                 </React.Fragment>
             );
         return result;
