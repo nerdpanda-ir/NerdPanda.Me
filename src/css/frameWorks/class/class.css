@@ -66,6 +66,10 @@
     {
         background-color: var(--color-gray-dark);
     }
+    .bg-dark-perple
+    {
+        background-color: var(--color-perple-dark);
+    }
 
 /* ====    background  Class   ==== */
 
