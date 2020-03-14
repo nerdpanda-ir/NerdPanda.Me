@@ -2,6 +2,10 @@
     import React from 'react';
     import Text from "../../../../../../items/Text/Text";
 /*====   import Sctipt    ====*/
+
+/*====  import Style    ====*/
+    import '../../../../../../../css/Page/index/Header/Speciality/Info/InfoDescription/InfoDescription.css';
+/*====  import Style    ====*/
 export default class InfoDescription extends React.Component{
     render() {
         let result =
