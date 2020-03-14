@@ -2,6 +2,7 @@
     import React from 'react';
     import Container from "../../../../Container/Container";
     import Info from "./Info/Info";
+    import MediaItems from "./MediaItems/MediaItems";
 /*====   import Sctipt    ====*/
 
 /*====   import Styles    ====*/
@@ -15,6 +16,7 @@ export default class Speciality extends React.Component{
                     <section id='speciality' className='boxSBB'>
                         <Container>
                             <Info />
+                            <MediaItems />
                         </Container>
                     </section>
                 </React.Fragment>
