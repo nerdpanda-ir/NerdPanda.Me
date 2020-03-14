@@ -10,7 +10,7 @@ export default class Container extends React.Component
     }
     static getDerivedStateFromProps(props)
     {
-        return {classList : props.className};
+        return {classList : ((props.hasOwnProperty('className')) ? props.className : '')};
     }
     render()
     {
