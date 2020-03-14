@@ -4,7 +4,7 @@
     import Logo from "../../../../items/Logo/Logo";
     import Menu from './Menu/Menu';
     import Options from "./Options/Options";
-
+    import ClearBoth from "../../../../items/ClearBoth/ClearBoth";
 /*====   import Sctipt    ====*/
 
 /*====   import Styles  ====*/
@@ -27,6 +27,7 @@ export default class Nav extends React.Component
                         <Logo id='NavLogoWrapper' className='h100 disIB col-1 boxSBB flR' imageSrc={LogoImg} alt='NerdPandaLogo'/>
                         <Menu />
                         <Options />
+                        <ClearBoth />
                     </Container>
                 </nav>
             </React.Fragment>
