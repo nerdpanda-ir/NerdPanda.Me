@@ -15,7 +15,7 @@ export default class Speciality extends React.Component{
                 <React.Fragment>
                     <section id='speciality' className='boxSBB'>
                         <Container>
-                            <Col className='col-6'>
+                            <Col className='col-6 disIB'>
                                 <Text className='color-secound' tagName='h1'>
                                     فول استک دولوپر
                                 </Text>
