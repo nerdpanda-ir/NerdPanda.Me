@@ -7,6 +7,7 @@
 
 /*====   import Styles    ====*/
     import '../../../../../css/Page/index/Header/Speciality/Speciality.css'
+import ClearBoth from "../../../../items/ClearBoth/ClearBoth";
 /*====   import Styles    ====*/
 export default class Speciality extends React.Component{
     render() {
@@ -17,6 +18,7 @@ export default class Speciality extends React.Component{
                         <Container>
                             <Info />
                             <MediaItems />
+                            <ClearBoth />
                         </Container>
                     </section>
                 </React.Fragment>
