@@ -16,7 +16,7 @@
 {
     outline: none;
 }
-a:not(.listActive):after {
+#PageMenu li a:not(.listActive):after {
     background: none repeat scroll 0 0 transparent;
     top: 98%;
     content: "";
@@ -28,7 +28,7 @@ a:not(.listActive):after {
     transition: width 0.5s ease 0s, left 0.5s ease 0s;
     width: 0;
 }
-a:hover:after {
+#PageMenu li a:hover:after {
     width: 100%;
     left: 0;
 }
