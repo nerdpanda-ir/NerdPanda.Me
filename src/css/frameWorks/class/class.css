@@ -30,6 +30,7 @@
         --sh1 :0 5px 23px rgba(188,207,219,.35);
         --sh2 :0 0 15px  rgba(188,207,219,.35);
         --sh3 :0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        --sh4 :0 7px 20px #673ab755;
     }
     ::selection
     {
@@ -174,5 +175,9 @@
     .sh3
     {
         box-shadow:  var(--sh3);
+    }
+    .sh4
+    {
+        box-shadow: var(--sh4);
     }
 /* ====    shadow Class  ==== */
