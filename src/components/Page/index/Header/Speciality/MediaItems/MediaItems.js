@@ -4,9 +4,6 @@
     import VectorImg from "../../../../../items/VectorImg/VectorImg";
 /*====   import Sctipt    ====*/
 
-/*====   import Style    ====*/
-    import '../../../../../../css/Page/index/Header/Speciality/MediaItems/MediaItems.css'
-/*====   import Style    ====*/
 
 /*====   import Files    ====*/
     import  fullStackImg from '../../../../../../img/page/index/fullStack.svg';
