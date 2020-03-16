@@ -9,27 +9,12 @@
     font-family:"pf-sans-normal";
     font-size: 18px;
     padding: 15px 15px;
-    transition: all 0.5s;
+    box-shadow: var(--sh4);
 }
-#contactMeBtn::before {
-    border-radius: 50px;
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    background-color: rgba(255, 255, 255, 0.1);
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-}
-#contactMeBtn:hover::before {
-    opacity: 1;
-    width: 100%;
+#contactMeBtn:hover
+{
+    box-shadow: var(--sh5);
+    cursor: pointer;
 }
 #contactMeBtn i
 {
@@ -37,4 +22,33 @@
     vertical-align: -8px;
     margin-right: var(--col-1);
 }
+#SpecialSocialNetworkWrapper li
+{
+    width: 50px;
+    display: inline-block;
+    height: 100%;
+    margin-right: 20px;
+}
+#SpecialSocialNetworkWrapper li a
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 55px;
+    background :var(--color-main);
+    color: var(--color-white);
+    text-align: center;
+    display: inline-block;
+    padding: 10px 0;
+    box-sizing: border-box;
+    box-shadow: var(--sh5);
+}
+#SpecialSocialNetworkWrapper li a:hover
+{
+    background: var(--color-secound);
+}
+#SpecialSocialNetworkWrapper li a i
+{
+    font-size: 30px;
+}
+
 
