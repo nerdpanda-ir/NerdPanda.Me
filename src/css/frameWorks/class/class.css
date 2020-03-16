@@ -182,3 +182,34 @@
         box-shadow: var(--sh4);
     }
 /* ====    shadow Class  ==== */
+
+
+/* ====    Btn Hover Effect  ==== */
+.btn::before {
+    border-radius: 50px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btn:hover::before {
+    opacity: 1;
+    width: 100%;
+}
+.btn
+{
+    transition: all 0.5s;
+    position: relative;
+
+}
+/* ====    Btn Hover Effect  ==== */
+
