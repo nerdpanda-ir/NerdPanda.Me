@@ -1,6 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from "react";
     import Col from "../../../../../items/Col/Col";
+    import VectorImg from "../../../../../items/VectorImg/VectorImg";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -17,7 +18,7 @@ export default class MediaItems extends React.Component{
             (
                 <React.Fragment>
                     <Col className='disIB col-6 flR dirL' id='specialityMedia'>
-                        <img src={fullStackImg} alt='full stack developer'/>
+                        <VectorImg src={fullStackImg} alt='full stack developer' />
                     </Col>
                 </React.Fragment>
             );
