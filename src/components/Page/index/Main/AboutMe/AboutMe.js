@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
+import GrayBig from "../../../../items/Title/GrayBig/GrayBig";
 /*====   import Sctipt    ====*/
 export default class AboutMe extends React.Component{
     render() {
@@ -7,7 +8,9 @@ export default class AboutMe extends React.Component{
             (
                 <React.Fragment>
                     <section id='aboutMe'>
-                        abouteme 
+                        <GrayBig tagName='h2'>
+                           درباره من
+                        </GrayBig>
                     </section>
                 </React.Fragment>
             );
