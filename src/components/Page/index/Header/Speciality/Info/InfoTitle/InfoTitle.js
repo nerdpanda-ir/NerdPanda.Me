@@ -1,6 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
-    import Text from "../../../../../../items/Text/Text";
+    import PerpleBig from "../../../../../../items/Title/PerpleBig/PerpleBig";
 /*====   import Sctipt    ====*/
 
 /*====   import Style   ====*/
@@ -11,7 +11,7 @@ export default class InfoTitle extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <Text tagName='h1' className='color-secound'>فول استک دولوپر</Text>
+                    <PerpleBig tagName='h1'>فول استک دولوپر</PerpleBig>
                 </React.Fragment>
             );
         return result;
