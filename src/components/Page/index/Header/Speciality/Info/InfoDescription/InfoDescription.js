@@ -1,6 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
-    import Text from "../../../../../../items/Text/Text";
+    import BigParagraph from "../../../../../../items/Paragraph/BigParagraph/BigParagraph";
 /*====   import Sctipt    ====*/
 
 /*====  import Style    ====*/
@@ -11,7 +11,9 @@ export default class InfoDescription extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <Text tagName='p' className='textCenter'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته</Text>
+                    <BigParagraph  className='textCenter'>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته
+                    </BigParagraph>
                 </React.Fragment>
             );
         return result;
