@@ -3,6 +3,7 @@
     import Container from "../../../../../Container/Container";
     import AboutInfo from "./AboutInfo/AboutInfo";
     import AboutMedia from "./AboutMedia/AboutMedia";
+    import ClearBoth from "../../../../../items/ClearBoth/ClearBoth";
 /*====   import Sctipt    ====*/
 export default class AboutContent extends React.Component{
     render() {
@@ -12,6 +13,7 @@ export default class AboutContent extends React.Component{
                     <Container>
                         <AboutInfo />
                         <AboutMedia />
+                        <ClearBoth />
                     </Container>
                 </React.Fragment>
             );
