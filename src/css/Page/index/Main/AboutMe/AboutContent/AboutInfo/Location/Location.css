@@ -1,0 +1,14 @@
+#location
+{
+    margin-bottom: 30px;
+    padding-right: 35px;
+}
+#location #city ,  #location #country
+{
+    font-size: 14px;
+    font-family: pf-sans-light;
+}
+#country::after
+{
+    content: ' - ';
+}
