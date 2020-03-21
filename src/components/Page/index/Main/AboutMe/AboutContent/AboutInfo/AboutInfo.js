@@ -4,7 +4,7 @@
     import Title from "./Title/Title";
     import Location from "./Location/Location";
     import Description from "./Description/Description";
-    import IconList from "./IconList/IconList";
+    import Favorits from "./Favorits/Favorits";
 /*====   import Sctipt    ====*/
 export default class AboutInfo extends React.Component{
     render() {
@@ -15,7 +15,7 @@ export default class AboutInfo extends React.Component{
                         <Title />
                         <Location />
                         <Description />
-                        <IconList />
+                        <Favorits />
                     </Col>
                 </React.Fragment>
             );
