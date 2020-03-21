@@ -1,6 +1,10 @@
 /*====   import Sctipt    ====*/
 import React from 'react';
 /*====   import Sctipt    ====*/
+
+/*====   import Style  ====*/
+    import '../../../../../../../../css/Page/index/Main/AboutMe/AboutContent/AboutInfo/Favorits/Favorits.css'
+/*====   import Style  ====*/
 export default class Favorits extends React.Component {
     render() {
         let result =
