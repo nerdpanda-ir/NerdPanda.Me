@@ -1,0 +1,5 @@
+.hint--perple.hint--bottom:before {
+    border-bottom-color: var(--color-secound); }
+.hint--perple:after {
+    background-color: var(--color-secound);;
+    text-shadow: 0 -1px 0px var(--color-secound);; }
