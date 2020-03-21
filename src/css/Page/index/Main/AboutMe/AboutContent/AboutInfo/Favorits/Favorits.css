@@ -7,7 +7,42 @@
     display: inline-block;
     margin-right: 15px;
 }
+#favorits li:hover
+{
+    cursor: pointer;
+}
+#favorits li:hover i
+{
+    color: var(--color-secound);
+}
 #favorits li i
 {
     font-size: 30px;
+}
+#favorits li::after
+{
+    text-align: center;
+    font-family: 'pf-sans-normal';
+    line-height: 1.5;
+    border-radius: 3px;
+}
+#favorits li a
+{
+    color: var(--color-main);
+    text-decoration: none;
+}
+#favorits li a::after
+{
+    content: '\f0c1';
+    font-family: 'Font Awesome 5 Pro Light';
+    font-size: 30px;
+    display: none;
+}
+#favorits li a:hover::after
+{
+    display: inline-block;
+}
+#favorits li a:hover i
+{
+    display: none;
 }
