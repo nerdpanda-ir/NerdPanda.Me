@@ -13,7 +13,7 @@ export default class Tip extends React.Component{
             (
                 <React.Fragment>
                     <section className='tip br3 sh3 col-11 bg-white dirR posRel boxSBB'>
-                        <section className='tipBtn posAb bg-dark-perple color-white sh3 textCenter boxSBB br100'>
+                        <section className='tipBtn posAb bg-perple-dark color-white sh3 textCenter boxSBB br100'>
                             <i className="fal fa-lightbulb-on"></i>
                         </section>
                         <section className='tipContent'>
