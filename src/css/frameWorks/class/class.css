@@ -64,15 +64,18 @@
     {
         background-color: var(--color-white-light);
     }
-    .bg-dark-gray
+    .bg-gray-dark
     {
         background-color: var(--color-gray-dark);
     }
-    .bg-dark-perple
+    .bg-perple-dark
     {
         background-color: var(--color-perple-dark);
     }
-
+    .bg-gray-normal
+    {
+        background: var(--color-gray);
+    }
 /* ====    background  Class   ==== */
 
 
