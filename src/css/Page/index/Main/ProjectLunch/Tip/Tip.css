@@ -3,6 +3,10 @@
     margin-bottom: 45px;
     padding: 20px 40px;
 }
+.tip:hover .tipBtn
+{
+    background: var(--color-main);
+}
 .tipBtn
 {
     width: 60px;
