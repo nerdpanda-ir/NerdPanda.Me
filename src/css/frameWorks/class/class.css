@@ -112,6 +112,10 @@
     .br3{
         border-radius: 3px;
     }
+    .br100
+    {
+        border-radius: 100%;
+    }
 /* ====    box Class  ==== */
 
 
