@@ -19,7 +19,7 @@ export default class GrayBig extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <Text tagName={this.state.tagName} className={'grayBig color-main textCenter'+this.state.classList} id={this.state.id}>{this.state.body}</Text>
+                    <Text tagName={this.state.tagName} className={'grayBig color-main textCenter '+this.state.classList} id={this.state.id}>{this.state.body}</Text>
                 </React.Fragment>
             );
         return result;
