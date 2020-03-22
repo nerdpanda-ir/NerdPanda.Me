@@ -1,5 +1,9 @@
 #lunch
 {
-    min-height: 692px;
-    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+#lunch .container .col-6:first-child .tip
+{
+    margin-right: 30px;
 }
