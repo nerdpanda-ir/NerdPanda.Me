@@ -1,0 +1,30 @@
+.tip
+{
+    margin-bottom: 45px;
+    padding: 20px 40px;
+}
+.tipBtn
+{
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    padding: 14px 0;
+    top: 50%;
+    transform: translateY(-30px);
+    right: -30px;
+}
+.tip:last-child
+{
+    margin-bottom: 0px;
+}
+.tip h4
+{
+    text-indent: 12px;
+    font-family: 'pf-sans-medium';
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.tip p
+{
+    text-indent: 30px;
+}
