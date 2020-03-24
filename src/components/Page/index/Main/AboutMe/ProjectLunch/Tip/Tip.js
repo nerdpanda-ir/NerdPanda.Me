@@ -1,6 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
     import BigParagraph from "../../../../../../items/Paragraph/BigParagraph/BigParagraph";
+    import GraySmall from "../../../../../../items/Title/GraySmall/GraySmall";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -25,7 +26,7 @@ export default class Tip extends React.Component{
                             <i className={this.state.icon}></i>
                         </section>
                         <section className='tipContent'>
-                            <h4>{this.state.title}</h4>
+                            <GraySmall tagName='h4'>{this.state.title}</GraySmall>
                             <BigParagraph className='textCenter'>{this.state.body}</BigParagraph>
                         </section>
                     </section>
