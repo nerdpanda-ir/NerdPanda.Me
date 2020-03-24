@@ -8,17 +8,25 @@
 
 /*====   import Style    ====*/
 export default class Tip extends React.Component{
+    constructor() {
+        super();
+        this.state = {body : null , title : null , icon : null };
+    }
+    static getDerivedStateFromProps(props)
+    {
+        return {body : props.children , title : props.title , icon : props.icon }
+    }
     render() {
         let result =
             (
                 <React.Fragment>
                     <section className='tip br3 sh3 col-11 bg-white dirR posRel boxSBB'>
                         <section className='tipBtn posAb bg-perple-dark color-white sh3 textCenter boxSBB br100'>
-                            <i className="fal fa-lightbulb-on"></i>
+                            <i className={this.state.icon}></i>
                         </section>
                         <section className='tipContent'>
-                            <h4>لورم ایپسوم متن ساختگی </h4>
-                            <BigParagraph className='textCenter'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،</BigParagraph>
+                            <h4>{this.state.title}</h4>
+                            <BigParagraph className='textCenter'>{this.state.body}</BigParagraph>
                         </section>
                     </section>
                 </React.Fragment>
