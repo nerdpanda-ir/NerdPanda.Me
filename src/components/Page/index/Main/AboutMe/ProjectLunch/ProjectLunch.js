@@ -8,7 +8,6 @@
 
 /*====   import Style   ====*/
     import '../../../../../../css/Page/index/Main/ProjectLunch/ProjectLunch.css'
-import BigParagraph from "../../../../../items/Paragraph/BigParagraph/BigParagraph";
 /*====   import Style   ====*/
 
 export default class ProjectLunch extends React.Component{
