@@ -1,0 +1,79 @@
+#skill .container
+{
+    padding-right: 30px;
+}
+.skllGroup
+{
+ height: auto;
+}
+.skillGroup h4
+{
+    font-size: 20px;
+}
+.skillTitle
+{
+    right: 0;
+    top: 50%;
+    transform: translateY(-10px);
+}
+.skillItemCheck
+{
+    width: 24px;
+    height: 24px;
+    right: -17px;
+    bottom: -6px;
+    padding: 3px 0;
+}
+.skillItemAll
+{
+    height: 12px;
+}
+.skillItemHeader
+{
+    margin-bottom: 15px;
+}
+.skillItemWrapper
+{
+    padding: 25px 0 25px 42px ;
+}
+.skillItemActive , .skillItemAll
+{
+    border-radius : 12px ;
+}
+.skillItem{
+    margin-bottom: 45px;
+}
+.skillItem:last-child
+{
+    margin-bottom: 0px;
+}
+.skillBtn
+{
+    width: 60px;
+    height: 60px;
+    padding: 14px 0;
+    top: 50%;
+    transform: translateY(-30px);
+    right: -30px;
+}
+.skillBtn i
+{
+    font-size: 32px;
+}
+.skillBtn .skillPrecent
+{
+    font-size: 20px;
+    vertical-align: -11px;
+}
+.skillGroup:hover .skillPrecent
+{
+    display: none;
+}
+.skillGroup:hover .skillBtn i
+{
+    display: inline-block;
+}
+.skillGroup:hover .skillBtn
+{
+    background: var(--color-main);
+}
