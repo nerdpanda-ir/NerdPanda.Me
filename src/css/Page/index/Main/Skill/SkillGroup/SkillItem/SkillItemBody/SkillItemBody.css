@@ -14,3 +14,7 @@
 {
     background-color: var(--color-main);
 }
+.skillItemActive , .skillItemAll
+{
+    border-radius : 12px ;
+}
