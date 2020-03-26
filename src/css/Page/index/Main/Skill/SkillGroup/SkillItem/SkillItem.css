@@ -1,0 +1,7 @@
+.skillItem{
+    margin-bottom: 45px;
+}
+.skillItem:last-child
+{
+    margin-bottom: 0px;
+}
