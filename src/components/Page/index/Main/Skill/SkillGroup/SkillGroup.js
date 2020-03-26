@@ -23,7 +23,7 @@ export default class SkillGroup extends React.Component{
             (
                 <React.Fragment>
                     <section className='skillGroup posRel bg-white br3 sh3'>
-                        <TipCircleIcon className={'skillBtn'}>
+                        <TipCircleIcon className='skillBtn'>
                             <i className={this.state.icon+" disN"}></i>
                             <section className='skillPrecent dirL disIB'> 60% </section>
                         </TipCircleIcon>
