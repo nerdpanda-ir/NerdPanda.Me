@@ -2,6 +2,7 @@
     import React from 'react';
     import BigParagraph from "../../../../../../items/Paragraph/BigParagraph/BigParagraph";
     import GraySmall from "../../../../../../items/Title/GraySmall/GraySmall";
+    import TipCircleIcon from "../../../../../../items/TipCircleIcon/TipCircleIcon";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -22,9 +23,9 @@ export default class Tip extends React.Component{
             (
                 <React.Fragment>
                     <section className='tip br3 sh3 col-11 bg-white dirR posRel boxSBB'>
-                        <section className='tipBtn posAb bg-perple-dark color-white sh3 textCenter boxSBB br100'>
+                        <TipCircleIcon>
                             <i className={this.state.icon}></i>
-                        </section>
+                        </TipCircleIcon>
                         <section className='tipContent'>
                             <GraySmall tagName='h4'>{this.state.title}</GraySmall>
                             <BigParagraph className='textCenter'>{this.state.body}</BigParagraph>
