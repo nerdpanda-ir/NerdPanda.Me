@@ -1,53 +1,18 @@
-
 .skillGroup
 {
     height: auto;
     margin-bottom: 35px;
-}
-.skillGroup h4
-{
-    font-size: 20px;
 }
 .skillTitle
 {
     right: 0;
     top: 50%;
     transform: translateY(-10px);
-}
-.skillItemCheck
-{
-    width: 24px;
-    height: 24px;
-    right: -17px;
-    bottom: -6px;
-    padding: 3px 0;
-}
-.skillItemAll
-{
-    height: 12px;
-}
-.skillItemAll:hover .skillItemActive ,.skillItemAll:hover .skillItemCheck
-{
-    background-color: var(--color-main);
-}
-.skillItemHeader
-{
-    margin-bottom: 15px;
+    font-size: 20px;
 }
 .skillItemWrapper
 {
     padding: 25px 0 25px 42px ;
-}
-.skillItemActive , .skillItemAll
-{
-    border-radius : 12px ;
-}
-.skillItem{
-    margin-bottom: 45px;
-}
-.skillItem:last-child
-{
-    margin-bottom: 0px;
 }
 .skillBtn .skillPrecent
 .skillBtn i
