@@ -3,6 +3,10 @@
     import SkillItemHeader from "./SkillItemHeader/SkillItemHeader";
     import SkillItemBody from "./SkillItemBody/SkillItemBody";
 /*====  import Script   ====*/
+
+/*====  import Style  ====*/
+    import '../../../../../../../css/Page/index/Main/Skill/SkillGroup/SkillItem/SkillItem.css'
+/*====  import Style  ====*/
 export default class SkillItem extends React.Component{
     render() {
         let result =
