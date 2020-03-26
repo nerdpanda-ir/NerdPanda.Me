@@ -1,6 +1,10 @@
 /*====   import Sctipt    ====*/
     import React from "react";
 /*====   import Sctipt    ====*/
+
+/*====   import Style    ====*/
+    import '../../../css/components/items/TipCircleIcon/TipCircleIcon.css'
+/*====   import Style    ====*/
 export default class TipCircleIcon extends React.Component{
     constructor() {
         super();
@@ -8,7 +12,7 @@ export default class TipCircleIcon extends React.Component{
     }
     static getDerivedStateFromProps(props)
     {
-        return {classList : props.className , body : props.children};
+        return {classList : ((props.className!==undefined) ? props.className : '' ) , body : props.children};
     }
     render() {
         let result =
