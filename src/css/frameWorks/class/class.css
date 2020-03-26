@@ -64,6 +64,10 @@
     {
         background-color: var(--color-white-light);
     }
+    .bg-white-dark
+    {
+        background-color:var(--color-white-dark);
+    }
     .bg-gray-dark
     {
         background-color: var(--color-gray-dark);
