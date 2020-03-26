@@ -1,0 +1,16 @@
+.skillItemCheck
+{
+    width: 24px;
+    height: 24px;
+    right: -17px;
+    bottom: -6px;
+    padding: 3px 0;
+}
+.skillItemAll
+{
+    height: 12px;
+}
+.skillItemAll:hover .skillItemActive ,.skillItemAll:hover .skillItemCheck
+{
+    background-color: var(--color-main);
+}
