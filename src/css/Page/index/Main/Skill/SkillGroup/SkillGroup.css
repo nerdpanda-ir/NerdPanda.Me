@@ -2,9 +2,10 @@
 {
     padding-right: 30px;
 }
-.skllGroup
+.skillGroup
 {
- height: auto;
+    height: auto;
+    margin-bottom: 35px;
 }
 .skillGroup h4
 {
@@ -28,6 +29,10 @@
 {
     height: 12px;
 }
+.skillItemAll:hover .skillItemActive ,.skillItemAll:hover .skillItemCheck
+{
+    background-color: var(--color-main);
+}
 .skillItemHeader
 {
     margin-bottom: 15px;
@@ -47,15 +52,7 @@
 {
     margin-bottom: 0px;
 }
-.skillBtn
-{
-    width: 60px;
-    height: 60px;
-    padding: 14px 0;
-    top: 50%;
-    transform: translateY(-30px);
-    right: -30px;
-}
+.skillBtn .skillPrecent
 .skillBtn i
 {
     font-size: 32px;
@@ -63,7 +60,6 @@
 .skillBtn .skillPrecent
 {
     font-size: 20px;
-    vertical-align: -11px;
 }
 .skillGroup:hover .skillPrecent
 {
