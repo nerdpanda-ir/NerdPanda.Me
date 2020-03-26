@@ -6,6 +6,10 @@
     import SkillItem from "./SkillGroup/SkillItem/SkillItem";
     import {GlobalContextProvider} from "../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
+
+/*====   import Style    ====*/
+    import '../../../../../css/Page/index/Main/Skill/Skill.css';
+/*====   import Style    ====*/
 export default class Skill extends React.Component{
     render() {
         let result =
