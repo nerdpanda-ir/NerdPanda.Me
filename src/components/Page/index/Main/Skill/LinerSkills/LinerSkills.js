@@ -1,8 +1,8 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
-    import SkillGroup from "../SkillGroup/SkillGroup";
+    import SkillGroup from "./SkillGroup/SkillGroup";
     import {GlobalContextProvider} from "../../../../../GlobalContext/GlobalContext";
-    import SkillItem from "../SkillGroup/SkillItem/SkillItem";
+    import SkillItem from "./SkillGroup/SkillItem/SkillItem";
 /*====   import Sctipt    ====*/
 
 export default class LinerSkills extends React.Component{

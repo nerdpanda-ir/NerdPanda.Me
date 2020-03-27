@@ -1,11 +1,11 @@
 /*====  import Script   ====*/
     import React from "react";
-import {GlobalContextConsumer} from "../../../../../../../GlobalContext/GlobalContext";
+import {GlobalContextConsumer} from "../../../../../../../../GlobalContext/GlobalContext";
 /*====  import Script   ====*/
 
 
 /*====  import Style  ====*/
-    import '../../../../../../../../css/Page/index/Main/Skill/SkillGroup/SkillItem/SkillItemBody/SkillItemBody.css'
+    import '../../../../../../../../../css/Page/index/Main/Skill/LinerSkills/SkillGroup/SkillItem/SkillItemBody/SkillItemBody.css'
 /*====  import Style  ====*/
 export default class SkillItemBody extends React.Component{
     render() {

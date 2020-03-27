@@ -1,13 +1,13 @@
 /*====  import Script   ====*/
     import React from "react";
-    import ClearBoth from "../../../../../../../items/ClearBoth/ClearBoth";
+    import ClearBoth from "../../../../../../../../items/ClearBoth/ClearBoth";
     import SkillItemTitle from "./SkillItemTitle/SkillItemTitle";
     import SkillItemPerecent from "./SkillItemPerecent/SkillItemPerecent";
 /*====  import Script   ====*/
 
 
 /*====  import Style   ====*/
-    import '../../../../../../../../css/Page/index/Main/Skill/SkillGroup/SkillItem/SkillItemHeader/SkillItemHeader.css'
+    import '../../../../../../../../../css/Page/index/Main/Skill/LinerSkills/SkillGroup/SkillItem/SkillItemHeader/SkillItemHeader.css'
 /*====  import Style   ====*/
 
 export default class SkillItemHeader extends React.Component{

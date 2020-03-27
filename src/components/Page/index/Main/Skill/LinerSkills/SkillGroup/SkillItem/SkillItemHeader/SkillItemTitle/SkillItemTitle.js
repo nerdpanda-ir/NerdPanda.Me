@@ -1,7 +1,7 @@
 /*====  import Script   ====*/
     import React from 'react'
-import GraySmall from "../../../../../../../../items/Title/GraySmall/GraySmall";
-import {GlobalContextConsumer} from "../../../../../../../../GlobalContext/GlobalContext";
+import GraySmall from "../../../../../../../../../items/Title/GraySmall/GraySmall";
+import {GlobalContextConsumer} from "../../../../../../../../../GlobalContext/GlobalContext";
 /*====  import Script   ====*/
 export default class SkillItemTitle extends React.Component{
     render() {

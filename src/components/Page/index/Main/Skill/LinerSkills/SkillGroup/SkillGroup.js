@@ -1,13 +1,13 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import GraySmall from "../../../../../items/Title/GraySmall/GraySmall";
-    import ClearBoth from "../../../../../items/ClearBoth/ClearBoth";
-    import TipCircleIcon from "../../../../../items/TipCircleIcon/TipCircleIcon";
+    import GraySmall from "../../../../../../items/Title/GraySmall/GraySmall";
+    import ClearBoth from "../../../../../../items/ClearBoth/ClearBoth";
+    import TipCircleIcon from "../../../../../../items/TipCircleIcon/TipCircleIcon";
 
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
-    import '../../../../../../css/Page/index/Main/Skill/SkillGroup/SkillGroup.css'
+    import '../../../../../../../css/Page/index/Main/Skill/LinerSkills/SkillGroup/SkillGroup.css'
 /*====   import Style    ====*/
 export default class SkillGroup extends React.Component{
     constructor() {

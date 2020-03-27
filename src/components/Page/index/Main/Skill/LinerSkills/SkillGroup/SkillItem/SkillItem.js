@@ -5,7 +5,7 @@
 /*====  import Script   ====*/
 
 /*====  import Style  ====*/
-    import '../../../../../../../css/Page/index/Main/Skill/SkillGroup/SkillItem/SkillItem.css'
+    import '../../../../../../../../css/Page/index/Main/Skill/LinerSkills/SkillGroup/SkillItem/SkillItem.css'
 /*====  import Style  ====*/
 export default class SkillItem extends React.Component{
     render() {
