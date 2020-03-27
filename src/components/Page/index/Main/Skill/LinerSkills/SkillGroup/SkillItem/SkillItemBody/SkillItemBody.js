@@ -14,7 +14,7 @@ export default class SkillItemBody extends React.Component{
             (
                 <React.Fragment>
                     <GlobalContextConsumer>
-                        {value =>{ style.width  = value.precent  ; window.console.log(style)}}
+                        {value =>{ style.width  = value.precent  ; }}
                     </GlobalContextConsumer>
                     <section className='skillItemBody'>
                         <section className='skillItemAll bg-white-dark col-12 disIB'>
