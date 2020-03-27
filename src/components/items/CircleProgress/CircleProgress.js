@@ -28,8 +28,8 @@ export default class CircleProgress extends React.Component{
                                                             <div className="first50-bar"></div>
                                                             <div className="value-bar"></div>
                                                         </div>
-                                                        <GraySmall tagName='h4' className='posAb circleProgressTitle col-12 t100'> {value.title}</GraySmall>
                                                     </div>
+                                                    <GraySmall tagName='h4' className='circleProgressTitle col-12 '> {value.title}</GraySmall>
                                                 </section>
                                             </React.Fragment>
                                         );
