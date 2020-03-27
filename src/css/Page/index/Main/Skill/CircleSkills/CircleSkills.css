@@ -1,0 +1,8 @@
+.circleProgress
+{
+    margin-right: var(--col-1);
+}
+.circleProgress:last-child
+{
+    margin-right: 0;
+}
