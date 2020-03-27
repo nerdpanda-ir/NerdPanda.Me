@@ -135,6 +135,14 @@
 
 
 /* ====    postion Class  ==== */
+    .r100
+    {
+        right: 100%;
+    }
+    .t100
+    {
+        top: 100%;
+    }
     .flR
     {
         float: right;
@@ -151,6 +159,7 @@
     {
         position: absolute;
     }
+
     .margCenter 
     {
         margin-right:auto ;
