@@ -1,5 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
+    import GrayBig from "../../../../items/Title/GrayBig/GrayBig";
+    import Container from "../../../../Container/Container";
 /*====   import Sctipt    ====*/
 export default class Portfolio extends React.Component{
     render() {
@@ -7,7 +9,10 @@ export default class Portfolio extends React.Component{
             (
                 <React.Fragment>
                     <section id='Portfolio'>
-                        Portfolio
+                        <GrayBig tagName='h2'> مهارت های من </GrayBig>
+                        <Container>
+
+                        </Container>
                     </section>
                 </React.Fragment>
             );
