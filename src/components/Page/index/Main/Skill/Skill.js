@@ -3,11 +3,11 @@
     import GrayBig from "../../../../items/Title/GrayBig/GrayBig";
     import Container from "../../../../Container/Container";
     import LinerSkills from "./LinerSkills/LinerSkills";
-    import CircleProgress from "../../../../items/CircleProgress/CircleProgress";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
     import '../../../../../css/Page/index/Main/Skill/Skill.css';
+import CircleSkills from "./CircleSkills/CircleSkills";
 /*====   import Style    ====*/
 export default class Skill extends React.Component{
     render() {
@@ -18,7 +18,7 @@ export default class Skill extends React.Component{
                         <GrayBig tagName='h2'> مهارت های من </GrayBig>
                         <Container className='boxSBB'>
                             <LinerSkills />
-                            <CircleProgress />
+                            <CircleSkills />
                         </Container>
                     </section>
                 </React.Fragment>
