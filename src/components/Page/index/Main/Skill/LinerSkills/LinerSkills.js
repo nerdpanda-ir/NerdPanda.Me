@@ -20,7 +20,7 @@ export default class LinerSkills extends React.Component{
                         <GlobalContextProvider value={{title : 'Java Script',precent : '70%'}}>
                             <SkillItem />
                         </GlobalContextProvider>
-                        <GlobalContextProvider value={{title : 'React',precent : '65%'}}>
+                        <GlobalContextProvider value={{title : 'React',precent : '70%'}}>
                             <SkillItem />
                         </GlobalContextProvider>
                         <GlobalContextProvider value={{title : 'Jquery',precent : '50%'}}>
