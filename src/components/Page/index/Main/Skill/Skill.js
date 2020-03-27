@@ -32,6 +32,9 @@ export default class Skill extends React.Component{
                                 <GlobalContextProvider value={{title : 'React',precent : '65%'}}>
                                     <SkillItem />
                                 </GlobalContextProvider>
+                                <GlobalContextProvider value={{title : 'Jquery',precent : '50%'}}>
+                                    <SkillItem />
+                                </GlobalContextProvider>
                             </SkillGroup>
                             <SkillGroup title='Back End ' icon='fal fa-lightbulb-on'>
                                 <GlobalContextProvider value={{title : 'Php',precent : '70%'}}>
