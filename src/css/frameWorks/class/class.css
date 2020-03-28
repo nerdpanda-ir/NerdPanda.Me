@@ -12,6 +12,7 @@
         --color-gray-dark : #3b444b;
 
         --color-perple-dark : #9b4dca;
+        --color-perple-rgba8 :  rgba(155,77,202,0.8);
         --color-gradient-perple : linear-gradient(to right, #E100FF, #7F00FF);
 
         --col-1: 8.33%;
@@ -75,6 +76,10 @@
     .bg-perple-dark
     {
         background-color: var(--color-perple-dark);
+    }
+    .bg-perple-rgba8
+    {
+        background-color: var(--color-perple-rgba8);
     }
     .bg-gray-normal
     {
@@ -143,6 +148,10 @@
     {
         top: 100%;
     }
+    .t0
+    {
+        top: 0;
+    }
     .flR
     {
         float: right;
@@ -180,6 +189,10 @@
     .textRight
     {
         text-align: right;
+    }
+    .textLeft
+    {
+        text-align: left;
     }
     .clearBoth
     {
