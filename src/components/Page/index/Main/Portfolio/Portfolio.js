@@ -9,9 +9,9 @@ export default class Portfolio extends React.Component{
             (
                 <React.Fragment>
                     <section id='Portfolio'>
-                        <GrayBig tagName='h2'> مهارت های من </GrayBig>
+                        <GrayBig tagName='h2'> نمونه کار ها  </GrayBig>
                         <Container>
-
+                            
                         </Container>
                     </section>
                 </React.Fragment>
