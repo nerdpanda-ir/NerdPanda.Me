@@ -1,0 +1,35 @@
+.portfolioContent
+{
+
+    height: var(--col-10);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+.portfolioView:hover .portfolioContent
+{
+    display: inline-block;
+}
+
+.portfolioContent h5
+{
+    font-size: 20px;
+}
+
+.starWrapper , .techWrapper , .linkWrapper
+{
+    font-size: 25px !important;
+}
+.starWrapper li, .techWrapper li , .linkWrapper li
+{
+    display: inline-block;
+}
+.starWrapper li , .techWrapper li , .linkWrapper li
+{
+    margin-right: 10px;
+}
+.starWrapper li:last-child ,.techWrapper li:last-child , .linkWrapper li:last-child
+{
+    margin-right: 0;
+}
