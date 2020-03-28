@@ -1,0 +1,10 @@
+#portfolioWrapper>li
+{
+    height: 285px;
+    margin-bottom: 50px;
+}
+#portfolioWrapper li:nth-child(even)
+{
+    direction: ltr;
+}
+
