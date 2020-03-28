@@ -9,7 +9,7 @@ export default class SkillItemPerecent extends React.Component{
         let result =
             (
                 <GlobalContextConsumer>
-                    {value=><Text tagName='span' className='flR col-4 dirR'>{value.precent} </Text>}
+                    {value=><Text tagName='span' className='flR col-4 dirR skillItemPerecent'>{value.precent} </Text>}
                 </GlobalContextConsumer>
 
             );
