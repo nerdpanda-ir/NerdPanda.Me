@@ -12,7 +12,7 @@
 export default class SkillGroup extends React.Component{
     constructor() {
         super();
-        this.state = {body  : null , title : null , icon : null};
+        this.state = {body  : null , title : null , icon : null , skillItemWrapperElement : React.createRef() , skillAv : 0};
     }
     static getDerivedStateFromProps(props)
     {
@@ -33,7 +33,7 @@ export default class SkillGroup extends React.Component{
                             {this.state.title}
                         </GraySmall>
 
-                        <section className='skillItemWrapper col-10 flL h100 dirL boxSBB'>
+                        <section className='skillItemWrapper col-10 flL h100 dirL boxSBB' ref={this.state.skillItemWrapperElement}>
                             {this.state.body}
                         </section>
                         <ClearBoth />
@@ -42,4 +42,28 @@ export default class SkillGroup extends React.Component{
             );
         return result;
     }
+    componentDidMount() {
+        this.setState({precentElements : this.state.skillItemWrapperElement.current.querySelectorAll('.skillItemPerecent')});
+    }
+    componentDidUpdate() {
+        if (this.state.skillAv===0)
+            this.state.precentElements.forEach(this.precentsIteration , this);
+        else if (this.state.skillAv>0)
+            this.state.skillItemWrapperElement.current.parentElement.querySelector('.skillPrecent').innerHTML = (this.state.skillAv / this.state.precentElements.length) + '%';
+    }
+    precentsIteration(element)
+    {
+        this.setState(
+           (ps)=>
+           {
+               let newState ={skillAv:  ps.skillAv + this.precentToNumber(element.innerText)};
+                return newState;
+           }
+            );
+    }
+    precentToNumber(precent)
+    {
+        return window.Number(precent.replace('%',''));
+    }
+
 }
