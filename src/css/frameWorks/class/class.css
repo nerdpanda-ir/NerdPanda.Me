@@ -124,6 +124,12 @@
     .br3{
         border-radius: 3px;
     }
+    .br5{
+        border-radius: 5px;
+    }
+    .br10{
+        border-radius: 10px;
+    }
     .br100
     {
         border-radius: 100%;
