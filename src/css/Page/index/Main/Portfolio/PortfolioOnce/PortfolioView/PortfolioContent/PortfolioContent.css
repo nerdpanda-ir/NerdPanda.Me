@@ -16,7 +16,10 @@
 {
     font-size: 20px;
 }
-
+.starWrapper i, .linkWrapper i
+{
+    cursor: pointer;
+}
 .starWrapper , .techWrapper , .linkWrapper
 {
     font-size: 25px !important;
