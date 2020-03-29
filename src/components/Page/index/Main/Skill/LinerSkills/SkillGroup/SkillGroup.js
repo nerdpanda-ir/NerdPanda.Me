@@ -12,7 +12,8 @@
 export default class SkillGroup extends React.Component{
     constructor() {
         super();
-        this.state = {body  : null , title : null , icon : null , skillItemWrapperElement : React.createRef() , skillAv : 0};
+        this.state = {body  : null , title : null , icon : null , skillAv : 0 };
+        this.elements  = { skillItemWrapperElement : React.createRef() , precentElements : null}
     }
     static getDerivedStateFromProps(props)
     {
@@ -25,7 +26,7 @@ export default class SkillGroup extends React.Component{
                     <section className='skillGroup posRel bg-white br3 sh3'>
                         <TipCircleIcon className='skillBtn'>
                             <i className={this.state.icon+" disN"}></i>
-                            <section className='skillPrecent dirL disIB'> 60% </section>
+                            <section className='skillPrecent dirL disIB'>{this.state.skillAv}</section>
                         </TipCircleIcon>
 
 
@@ -33,7 +34,7 @@ export default class SkillGroup extends React.Component{
                             {this.state.title}
                         </GraySmall>
 
-                        <section className='skillItemWrapper col-10 flL h100 dirL boxSBB' ref={this.state.skillItemWrapperElement}>
+                        <section className='skillItemWrapper col-10 flL h100 dirL boxSBB' ref={this.elements.skillItemWrapperElement}>
                             {this.state.body}
                         </section>
                         <ClearBoth />
@@ -43,13 +44,14 @@ export default class SkillGroup extends React.Component{
         return result;
     }
     componentDidMount() {
-        this.setState({precentElements : this.state.skillItemWrapperElement.current.querySelectorAll('.skillItemPerecent')});
+        this.elements.precentElements = this.elements.skillItemWrapperElement.current.querySelectorAll('.skillItemPerecent');
+        this.elements.precentElements.forEach(this.precentsIteration , this);
+
     }
     componentDidUpdate() {
-        if (this.state.skillAv===0)
-            this.state.precentElements.forEach(this.precentsIteration , this);
-        else if (this.state.skillAv>0)
-            this.state.skillItemWrapperElement.current.parentElement.querySelector('.skillPrecent').innerHTML = (this.state.skillAv / this.state.precentElements.length) + '%';
+
+        if (this.state.skillAv>0)
+            this.setState({skillAv : (this.state.skillAv / this.elements.precentElements.length) + '%'});
     }
     precentsIteration(element)
     {
