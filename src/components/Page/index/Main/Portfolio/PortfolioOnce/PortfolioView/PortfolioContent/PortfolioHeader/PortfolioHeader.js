@@ -2,6 +2,7 @@
     import React from "react";
     import GraySmall from "../../../../../../../../items/Title/GraySmall/GraySmall";
     import PortfolioStars from "./PortfolioStars/PortfolioStars";
+    import {GlobalContextConsumer} from "../../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
 export default class PortfolioHeader extends React.Component {
@@ -11,7 +12,11 @@ export default class PortfolioHeader extends React.Component {
             (
                 <React.Fragment>
                         <header>
-                            <GraySmall tagName='h5' className='col-6 disIB'> اپلیکیشن شماره ۱ </GraySmall>
+                            <GlobalContextConsumer>
+                                {
+                                    value =><GraySmall tagName='h5' className='col-6 disIB'> {value.title} </GraySmall>
+                                }
+                            </GlobalContextConsumer>
                             <PortfolioStars />
                         </header>
                 </React.Fragment>
