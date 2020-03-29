@@ -170,7 +170,7 @@
     }
     .posAb
     {
-        position: absolute;
+        position: absolute !important;
     }
 
     .margCenter 
