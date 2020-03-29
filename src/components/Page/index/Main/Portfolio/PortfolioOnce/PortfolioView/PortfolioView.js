@@ -1,11 +1,10 @@
 /*====   import Sctipt    ====*/
     import React from "react";
     import PortfolioContent from "./PortfolioContent/PortfolioContent";
- /*====   import Sctipt    ====*/
+    import {GlobalContextConsumer} from "../../../../../../GlobalContext/GlobalContext";
+/*====   import Sctipt    ====*/
 
-/*====   import Sctipt    ====*/
-    import port1 from '../../../../../../../img/page/index/Portfolio/port1.jpg'
-/*====   import Sctipt    ====*/
+
 
 export default class PortfolioView extends React.Component{
     render() {
@@ -13,7 +12,11 @@ export default class PortfolioView extends React.Component{
             (
                 <React.Fragment>
                     <figure className='portfolioView br3 h100 col-11 posRel'>
-                        <img src={port1} alt="portfolio" className='col-12 br3 h100 sh3'/>
+                        <GlobalContextConsumer>
+                            {
+                                value=><img src={value.img} alt={value.alt} className='col-12 br3 h100 sh3'/>
+                            }
+                        </GlobalContextConsumer>
                         <PortfolioContent />
                     </figure>
                 </React.Fragment>
