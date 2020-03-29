@@ -1,6 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from "react";
     import PortfolioHeader from "./PortfolioHeader/PortfolioHeader";
+    import PortfolioMain from "./PortfolioMain/PortfolioMain";
     import PortfolioFooter from "./PortfolioFooter/PortfolioFooter";
 /*====   import Sctipt    ====*/
 
@@ -17,6 +18,7 @@ export default class PortfolioContent extends React.Component {
                 <React.Fragment>
                     <figcaption className='portfolioContent boxSBB posAb color-white  col-11 br3 sh4 disN bg-perple-rgba8 dirR'>
                         <PortfolioHeader />
+                        <PortfolioMain />
                         <PortfolioFooter />
                     </figcaption>
                 </React.Fragment>
