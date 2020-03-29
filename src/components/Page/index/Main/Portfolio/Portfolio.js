@@ -3,6 +3,7 @@
     import GrayBig from "../../../../items/Title/GrayBig/GrayBig";
     import Container from "../../../../Container/Container";
     import PortfolioOnce from "./PortfolioOnce/PortfolioOnce";
+    import MoreBtn from "../../../../items/MoreBtn/MoreBtn";
     import {GlobalContextProvider} from "../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
@@ -15,6 +16,7 @@
     import port2 from  '../../../../../img/page/index/Portfolio/port2.jpg'
     import port3 from  '../../../../../img/page/index/Portfolio/port3.png'
     import port4 from  '../../../../../img/page/index/Portfolio/port4.jpg'
+
 /*====   import FIles    ====*/
 
 
@@ -25,7 +27,8 @@ export default class Portfolio extends React.Component{
                 <React.Fragment>
                     <section id='Portfolio'>
                         <GrayBig tagName='h2'> نمونه کار ها  </GrayBig>
-                        <Container>
+                        <Container className='posRel'>
+                            <MoreBtn/>
                             <ul id='portfolioWrapper'>
                                 <GlobalContextProvider value = {{title : 'نمونه کار اول ' , img : port1 , alt : 'نمونه کار اولی '}}>
                                     <PortfolioOnce />
