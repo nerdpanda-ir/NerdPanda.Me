@@ -19,7 +19,7 @@ export default class MoreBtn extends React.Component
         let result =
             (
                 <React.Fragment>
-                    <section className={this.state.classList+' posAb l0 moreBtn bg-perple-dark sh3 white color-white disIB br100 boxSBB textCenter'}>
+                    <section className={this.state.classList+' moreBtn bg-perple-dark sh3 white color-white disIB br100 boxSBB textCenter btn l0 posAb'}>
                         <i className="fal fa-plus-circle"></i>
                     </section>
                 </React.Fragment>
