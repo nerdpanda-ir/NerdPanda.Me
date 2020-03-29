@@ -1,4 +1,67 @@
+#blog h2
+{
+    margin-bottom: 130px;
+}
+#blog .container>section {
+    margin-bottom: 180px;
+}
+#blog .container>section:nth-last-child(-n+2)
+{
+    margin-bottom: 30px;
+}
+
+#blog .container>section:nth-child(even)
+{
+    direction: ltr;
+}
 article
 {
     min-height: 200px;
+    height: auto;
+    direction: rtl;
 }
+article img
+{
+    height: 200px;
+    right: 50%;
+    transform:translate(50%,-50%);
+}
+article header {
+    display: inline-block;
+    margin-top: 140px;
+}
+article main
+{
+    margin-top: 25px;
+}
+article footer
+{
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    direction: ltr;
+    text-align: left;
+    width: var(--col-12);
+     box-sizing: border-box;
+}
+article footer li
+{
+    display: inline-block;
+    margin-right:20px;
+}
+article .moreBtn{
+    top: 100%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+article footer li .iconLable
+{
+    margin-left: 12px;
+}
+article header , article footer  , article main
+{
+    padding: 0 40px;
+}
+
+
+
