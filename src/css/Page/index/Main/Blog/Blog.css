@@ -3,6 +3,9 @@
     margin-bottom: 130px;
 }
 
-
+#blog .moreBtn:first-child
+{
+    top: -175px;
+}
 
 
