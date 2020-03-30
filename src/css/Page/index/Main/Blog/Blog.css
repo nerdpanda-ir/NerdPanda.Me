@@ -27,7 +27,6 @@ article img
     transform:translate(50%,-50%);
 }
 article header {
-    display: inline-block;
     margin-top: 140px;
 }
 article main
@@ -36,13 +35,8 @@ article main
 }
 article footer
 {
-    display: inline-block;
     margin-top: 25px;
     margin-bottom: 40px;
-    direction: ltr;
-    text-align: left;
-    width: var(--col-12);
-     box-sizing: border-box;
 }
 article footer li
 {
@@ -62,7 +56,7 @@ article footer li .iconLable
 {
     margin-left: 12px;
 }
-article header , article footer  , article main
+.articleContent
 {
     padding: 0 40px;
 }
