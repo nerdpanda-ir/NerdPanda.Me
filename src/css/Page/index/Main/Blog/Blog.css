@@ -49,6 +49,10 @@ article footer li
     display: inline-block;
     margin-right:20px;
 }
+article footer li:last-child
+{
+    margin: 0;
+}
 article .moreBtn{
     top: 100%;
     right: 50%;
