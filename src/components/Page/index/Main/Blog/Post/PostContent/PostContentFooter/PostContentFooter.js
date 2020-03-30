@@ -1,6 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-import MoreBtn from "../../../../../../../items/MoreBtn/MoreBtn";
+    import PostData from "./PostData/PostData";
+    import MoreBtn from "../../../../../../../items/MoreBtn/MoreBtn";
 /*====   import Sctipt    ====*/
 export default class PostContentFooter extends React.Component{
     render() {
@@ -8,20 +9,7 @@ export default class PostContentFooter extends React.Component{
             (
                 <React.Fragment>
                     <footer className='disIB dirL textLeft col-12 boxSBB'>
-                        <ul>
-                            <li>
-                                <i className="fal fa-calendar-edit"></i>
-                                <span className='iconLable'>1398/10/02</span>
-                            </li>
-                            <li>
-                                <i className="fal fa-comments-alt"></i>
-                                <span className='iconLable'>50</span>
-                            </li>
-                            <li>
-                                <i className="fal fa-heart"></i>
-                                <span className='iconLable'>50</span>
-                            </li>
-                        </ul>
+                        <PostData />
                         <MoreBtn />
                     </footer>
                 </React.Fragment>
