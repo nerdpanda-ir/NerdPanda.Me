@@ -1,6 +1,10 @@
 /*====   import Sctipt    ====*/
     import React from "react";
 /*====   import Sctipt    ====*/
+
+/*====   import Style    ====*/
+    import '../../../../../../../../../css/Page/index/Main/Blog/Post/PostContent/PostContentFooter/PostData/PostData.css'
+/*====   import Style    ====*/
 export default class PostData extends React.Component{
     render() {
         let result =
