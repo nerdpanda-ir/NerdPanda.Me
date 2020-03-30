@@ -1,23 +1,24 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
-    import PostContentHeader from "./PostContentHeader/PostContentHeader";
-    import PostContentMain from "./PostContentMain/PostContentMain";
-    import PostContentFooter from "./PostContentFooter/PostContentFooter";
+    import ArticleContentHeader from "./ArticleContentHeader/ArticleContentHeader";
+    import ArticleContentMain from "./ArticleContentMain/ArticleContentMain";
+    import ArticleContentFooter from "./ArticleContentFooter/ArticleContentFooter";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
-    import '../../../../../../../css/Page/index/Main/Blog/Post/PostContent/PostContent.css'
+    import '../../../../../../../../css/Page/index/Main/Blog/Post/Article/ArticleContent/ArticleContent.css'
+
 /*====   import Style    ====*/
 
-export default class PostContent extends React.Component{
+export default class ArticleContent extends React.Component{
     render() {
         let result =
             (
                 <React.Fragment>
                     <section className='articleContent boxSBB'>
-                        <PostContentHeader />
-                        <PostContentMain />
-                        <PostContentFooter />
+                        <ArticleContentHeader />
+                        <ArticleContentMain />
+                        <ArticleContentFooter />
                     </section>
                 </React.Fragment>
             );
