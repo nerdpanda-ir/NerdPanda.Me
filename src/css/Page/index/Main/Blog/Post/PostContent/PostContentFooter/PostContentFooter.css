@@ -4,19 +4,6 @@ article footer
     margin-top: 25px;
     margin-bottom: 40px;
 }
-article footer li
-{
-    display: inline-block;
-    margin-right:20px;
-}
-article footer li:last-child
-{
-    margin: 0;
-}
-article footer li .iconLable
-{
-    margin-left: 12px;
-}
 
 article .moreBtn{
     top: 100%;
