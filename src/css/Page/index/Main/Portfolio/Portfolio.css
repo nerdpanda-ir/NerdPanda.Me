@@ -11,7 +11,7 @@
 {
     direction: ltr;
 }
-#portfolioWrapper li:nth-last-child(-n+2)
+#portfolioWrapper>li:nth-last-child(-n+2)
 {
     margin-bottom: 30px;
 }
