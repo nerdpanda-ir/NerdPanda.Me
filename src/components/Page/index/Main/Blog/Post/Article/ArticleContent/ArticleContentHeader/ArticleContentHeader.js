@@ -1,14 +1,14 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import GraySmall from "../../../../../../../items/Title/GraySmall/GraySmall";
-    import {GlobalContextConsumer} from "../../../../../../../GlobalContext/GlobalContext";
+    import GraySmall from "../../../../../../../../items/Title/GraySmall/GraySmall";
+    import {GlobalContextConsumer} from "../../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
-    import '../../../../../../../../css/Page/index/Main/Blog/Post/PostContent/PostContentHeader/PostContentHeader.css'
+    import '../../../../../../../../../css/Page/index/Main/Blog/Post/Article/ArticleContent/ArticleContentHeader/ArticleContentHeader.css'
 /*====   import Style    ====*/
 
-export default class PostContentHeader extends React.Component{
+export default class ArticleContentHeader extends React.Component{
     render() {
         let result =
             (
