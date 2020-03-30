@@ -2,67 +2,7 @@
 {
     margin-bottom: 130px;
 }
-#blog .container>section {
-    margin-bottom: 180px;
-}
-#blog .container>section:nth-last-of-type(-n+2)
-{
-    margin-bottom: 60px;
-}
 
-#blog .container>section:nth-child(even)
-{
-    direction: ltr;
-}
-article
-{
-    height:386px;
-    direction: rtl;
-}
-article p
-{
-    height: 120px;
-}
-article img
-{
-    height: 200px;
-    right: 50%;
-    transform:translate(50%,-50%);
-}
-article header {
-    margin-top: 140px;
-}
-article main
-{
-    margin-top: 25px;
-}
-article footer
-{
-    margin-top: 25px;
-    margin-bottom: 40px;
-}
-article footer li
-{
-    display: inline-block;
-    margin-right:20px;
-}
-article footer li:last-child
-{
-    margin: 0;
-}
-article .moreBtn{
-    top: 100%;
-    right: 50%;
-    transform: translate(50%, -50%);
-}
-article footer li .iconLable
-{
-    margin-left: 12px;
-}
-.articleContent
-{
-    padding: 0 40px;
-}
 
 
 
