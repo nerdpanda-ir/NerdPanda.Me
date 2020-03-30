@@ -1,6 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-import GraySmall from "../../../../../../../items/Title/GraySmall/GraySmall";
+    import GraySmall from "../../../../../../../items/Title/GraySmall/GraySmall";
 /*====   import Sctipt    ====*/
 export default class PostContentHeader extends React.Component{
     render() {
