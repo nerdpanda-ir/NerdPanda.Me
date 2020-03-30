@@ -1,12 +1,12 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import {GlobalContextConsumer} from "../../../../../../GlobalContext/GlobalContext";
+    import {GlobalContextConsumer} from "../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
-    import '../../../../../../../css/Page/index/Main/Blog/Post/PostImage/PostImage.css'
+    import '../../../../../../../../css/Page/index/Main/Blog/Post/Article/ArticleImage/ArticleImage.css'
 /*====   import Style    ====*/
-export default class PostImage extends React.Component{
+export default class ArticleImage extends React.Component{
     render() {
         let result =
             (
