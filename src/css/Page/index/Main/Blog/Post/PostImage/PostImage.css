@@ -1,0 +1,6 @@
+article img
+{
+    height: 200px;
+    right: 50%;
+    transform:translate(50%,-50%);
+}
