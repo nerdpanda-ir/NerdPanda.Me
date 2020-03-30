@@ -1,5 +1,4 @@
 
-// todo :  وبلاگ با کانتکست کار کند
 // todo :  مرتب کردن استایل ها
 // todo :  گذاشتن دکمه more btn برای وبلاگ
 // todo :  ساخت کامپوننت small perple title برای پست ها
@@ -10,12 +9,11 @@
     import Container from "../../../../Container/Container";
     import Post from "./Post/Post";
     import {GlobalContextProvider} from "../../../../GlobalContext/GlobalContext";
+    import ClearBoth from "../../../../items/ClearBoth/ClearBoth";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
     import '../../../../../css/Page/index/Main/Blog/Blog.css';
-import ClearBoth from "../../../../items/ClearBoth/ClearBoth";
-
 /*====   import Style    ====*/
 
 export default class Blog extends React.Component{
