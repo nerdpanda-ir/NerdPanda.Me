@@ -1,0 +1,17 @@
+#blog .container>section {
+    margin-bottom: 180px;
+}
+#blog .container>section:nth-last-of-type(-n+2)
+{
+    margin-bottom: 60px;
+}
+
+#blog .container>section:nth-child(even)
+{
+    direction: ltr;
+}
+article
+{
+    height:386px;
+    direction: rtl;
+}
