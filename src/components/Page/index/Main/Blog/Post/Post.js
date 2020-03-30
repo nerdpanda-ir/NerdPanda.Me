@@ -1,11 +1,11 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
-    import PostImage from "./PostImage/PostImage";
-    import PostContent from "./PostContent/PostContent";
+    import Article from "./Article/Article";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
     import '../../../../../../css/Page/index/Main/Blog/Post/Post.css'
+
 /*====   import Style    ====*/
 export default class Post extends React.Component{
     render() {
@@ -13,10 +13,7 @@ export default class Post extends React.Component{
             (
                 <React.Fragment>
                     <section className='col-6 flR'>
-                        <article className='col-11 bg-white sh3 br5 posRel'>
-                            <PostImage />
-                            <PostContent />
-                        </article>
+                        <Article />
                     </section>
                 </React.Fragment>
             );
