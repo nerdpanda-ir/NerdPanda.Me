@@ -16,9 +16,12 @@
 }
 article
 {
-    min-height: 200px;
-    height: auto;
+    height:386px;
     direction: rtl;
+}
+article p
+{
+    height: 120px;
 }
 article img
 {
