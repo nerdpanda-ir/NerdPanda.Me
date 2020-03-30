@@ -15,7 +15,7 @@ export default class PostContentFooter extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <footer className='disIB dirL textLeft col-12 boxSBB'>
+                    <footer className='disIB dirL textLeft col-12'>
                         <PostData />
                         <MoreBtn />
                     </footer>
