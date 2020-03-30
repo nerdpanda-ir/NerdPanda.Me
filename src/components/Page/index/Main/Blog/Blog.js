@@ -14,6 +14,7 @@
 
 /*====   import Style    ====*/
     import '../../../../../css/Page/index/Main/Blog/Blog.css';
+import ClearBoth from "../../../../items/ClearBoth/ClearBoth";
 
 /*====   import Style    ====*/
 
@@ -28,6 +29,10 @@ export default class Blog extends React.Component{
                             <GlobalContextProvider value={{img : 'http://localhost:3000/static/media/port4.b22a9f42.jpg' , alt : 'firstPost',title : 'پست اول' , content : 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است....'}}>
                                 <Post />
                             </GlobalContextProvider>
+                            <GlobalContextProvider value={{img : 'http://localhost:3000/static/media/port3.96f126f5.png' , alt : 'firstPost',title : 'پست اول' , content : 'first'}}>
+                                <Post />
+                            </GlobalContextProvider>
+                            <ClearBoth/>
                         </Container>
                     </section>
                 </React.Fragment>
