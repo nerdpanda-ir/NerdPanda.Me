@@ -13,7 +13,7 @@ export default class Post extends React.Component{
             (
                 <React.Fragment>
                     <section className='col-6 flR'>
-                        <article className='col-11 bg-white sh3 br5 posRel boxSBB'>
+                        <article className='col-11 bg-white sh3 br5 posRel'>
                             <PostImage />
                             <PostContent />
                         </article>
