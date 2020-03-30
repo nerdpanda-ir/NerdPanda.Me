@@ -8,7 +8,7 @@ export default class Post extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <section className='col-6 disIB'>
+                    <section className='col-6 flR'>
                         <article className='col-11 bg-white sh3 br5 posRel boxSBB'>
                             <PostImage />
                             <PostContent />
