@@ -3,9 +3,9 @@
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
-    import '../../../../../../../../../css/Page/index/Main/Blog/Post/PostContent/PostContentFooter/PostData/PostData.css'
+    import '../../../../../../../../../../css/Page/index/Main/Blog/Post/Article/ArticleContent/ArticleContentFooter/ArticleData/ArticleData.css'
 /*====   import Style    ====*/
-export default class PostData extends React.Component{
+export default class ArticleData extends React.Component{
     render() {
         let result =
             (
