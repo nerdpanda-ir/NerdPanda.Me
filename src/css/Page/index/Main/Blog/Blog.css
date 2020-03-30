@@ -5,9 +5,9 @@
 #blog .container>section {
     margin-bottom: 180px;
 }
-#blog .container>section:nth-last-child(-n+2)
+#blog .container>section:nth-last-of-type(-n+2)
 {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 #blog .container>section:nth-child(even)
