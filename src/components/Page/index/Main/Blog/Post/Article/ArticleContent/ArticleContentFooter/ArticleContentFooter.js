@@ -1,22 +1,22 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import PostData from "./PostData/PostData";
-    import MoreBtn from "../../../../../../../items/MoreBtn/MoreBtn";
+    import MoreBtn from "../../../../../../../../items/MoreBtn/MoreBtn";
+    import ArticleData from "./ArticleData/ArticleData";
 /*====   import Sctipt    ====*/
 
 
 /*====   import Style    ====*/
-    import '../../../../../../../../css/Page/index/Main/Blog/Post/PostContent/PostContentFooter/PostContentFooter.css'
+    import '../../../../../../../../../css/Page/index/Main/Blog/Post/Article/ArticleContent/ArticleContentFooter/ArticleContentFooter.css'
 /*====   import Style    ====*/
 
 
-export default class PostContentFooter extends React.Component{
+export default class ArticleContentFooter extends React.Component{
     render() {
         let result =
             (
                 <React.Fragment>
                     <footer className='disIB dirL textLeft col-12'>
-                        <PostData />
+                        <ArticleData />
                         <MoreBtn />
                     </footer>
                 </React.Fragment>
