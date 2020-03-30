@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from "react";
+    import {GlobalContextConsumer} from "../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 export default class PostImage extends React.Component{
     render() {
@@ -7,7 +8,12 @@ export default class PostImage extends React.Component{
             (
                 <React.Fragment>
                     <section className='articleImage'>
-                        <img src="http://localhost:3000/static/media/port4.b22a9f42.jpg" alt="alt" className='col-9 posAb sh5 br5'/>
+                        <GlobalContextConsumer>
+                            {
+                                value=><img src={value.img} alt={value.alt} className='col-9 posAb sh5 br5'/>
+                            }
+                        </GlobalContextConsumer>
+
                     </section>
                 </React.Fragment>
             );
