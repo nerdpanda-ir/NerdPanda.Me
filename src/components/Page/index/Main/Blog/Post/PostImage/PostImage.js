@@ -2,6 +2,10 @@
     import React from "react";
     import {GlobalContextConsumer} from "../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
+
+/*====   import Style    ====*/
+    import '../../../../../../../css/Page/index/Main/Blog/Post/PostImage/PostImage.css'
+/*====   import Style    ====*/
 export default class PostImage extends React.Component{
     render() {
         let result =
