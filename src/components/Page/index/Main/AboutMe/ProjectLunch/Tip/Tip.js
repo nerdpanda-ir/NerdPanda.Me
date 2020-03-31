@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
+    import Col from "../../../../../../items/Col/Col";
     import BigParagraph from "../../../../../../items/Paragraph/BigParagraph/BigParagraph";
     import GraySmall from "../../../../../../items/Title/GraySmall/GraySmall";
     import TipCircleIcon from "../../../../../../items/TipCircleIcon/TipCircleIcon";
@@ -22,7 +23,7 @@ export default class Tip extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <section className='tip br3 sh3 col-11 bg-white dirR posRel boxSBB'>
+                    <Col className='tip br5 sh3 col-11 bg-white dirR posRel boxSBB'>
                         <TipCircleIcon>
                             <i className={this.state.icon}></i>
                         </TipCircleIcon>
@@ -30,7 +31,7 @@ export default class Tip extends React.Component{
                             <GraySmall tagName='h4'>{this.state.title}</GraySmall>
                             <BigParagraph className='textCenter'>{this.state.body}</BigParagraph>
                         </section>
-                    </section>
+                    </Col>
                 </React.Fragment>
             );
         return result;
