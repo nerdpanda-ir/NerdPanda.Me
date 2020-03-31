@@ -7,6 +7,10 @@ article footer li:last-child
 {
     margin: 0;
 }
+article footer li:hover
+{
+    color : var(--color-secound);
+}
 article footer li .iconLable
 {
     margin-left: 12px;
