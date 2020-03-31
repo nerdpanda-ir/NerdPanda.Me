@@ -14,7 +14,7 @@ export default class ArticleImage extends React.Component{
                     <section className='articleImage'>
                         <GlobalContextConsumer>
                             {
-                                value=><img src={value.img} alt={value.alt} className='col-9 posAb sh5 br5'/>
+                                value=><img src={value.img} alt={value.alt} className='col-9 posAb sh5 br10'/>
                             }
                         </GlobalContextConsumer>
 
