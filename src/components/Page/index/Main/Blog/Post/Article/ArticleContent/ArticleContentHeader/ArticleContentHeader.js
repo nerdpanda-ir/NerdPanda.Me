@@ -1,6 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import GraySmall from "../../../../../../../../items/Title/GraySmall/GraySmall";
+    import PerpleSmall from "../../../../../../../../items/Title/PerpleSmall/PerpleSmall";
     import {GlobalContextConsumer} from "../../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
@@ -14,13 +14,13 @@ export default class ArticleContentHeader extends React.Component{
             (
                 <React.Fragment>
                     <header className='disIB col-12'>
-                        <GraySmall tagName='h3'>
+                        <PerpleSmall tagName='h3'>
                             <GlobalContextConsumer>
                                 {
                                     value => value.title
                                 }
                             </GlobalContextConsumer>
-                        </GraySmall>
+                        </PerpleSmall>
                     </header>
                 </React.Fragment>
             );
