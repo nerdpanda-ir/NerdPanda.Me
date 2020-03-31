@@ -1,5 +1,6 @@
 /*====  Import Script   ====*/
     import React from "react";
+    import Col from "../Col/Col";
     import GraySmall from "../Title/GraySmall/GraySmall";
     import {GlobalContextConsumer} from "../../GlobalContext/GlobalContext";
 /*====  Import Script   ====*/
@@ -21,7 +22,7 @@ export default class CircleProgress extends React.Component{
                                     let result =
                                         (
                                             <React.Fragment>
-                                                <section className='circleProgress  col-2 disIB'>
+                                                <Col  className='circleProgress col-2 disIB'>
                                                     <div className={"margCenter progress-circle  p"+precent}>
                                                         <span>{value.precent}</span>
                                                         <div className="left-half-clipper">
@@ -30,7 +31,7 @@ export default class CircleProgress extends React.Component{
                                                         </div>
                                                     </div>
                                                     <GraySmall tagName='h4' className='circleProgressTitle col-12 '> {value.title}</GraySmall>
-                                                </section>
+                                                </Col>
                                             </React.Fragment>
                                         );
                                     return result;
