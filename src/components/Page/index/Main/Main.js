@@ -4,7 +4,7 @@
     import Skill from "./Skill/Skill";
     import Portfolio from "./Portfolio/Portfolio";
     import Blog from "./Blog/Blog";
-import ContactMe from "./ContactMe/ContactMe";
+    import ContactMe from "./ContactMe/ContactMe";
 /*====   import Sctipt    ====*/
 export default class Main extends React.Component{
     render() {
