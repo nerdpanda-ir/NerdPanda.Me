@@ -4,7 +4,7 @@
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
-    import '../../../../css/components/items/Title/GraySmall/GraySmall.css'
+    import '../../../../css/components/items/Title/SmallTitle/SmallTitle.css'
 /*====   import Style    ====*/
 export default class graySmall extends React.Component{
     constructor() {
@@ -19,7 +19,7 @@ export default class graySmall extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <Text tagName={this.state.tagName} className={'graySmall '+this.state.classList} id={this.state.id}>{this.state.body}</Text>
+                    <Text tagName={this.state.tagName} className={'smallTitle '+this.state.classList} id={this.state.id}>{this.state.body}</Text>
                 </React.Fragment>
             );
         return result;
