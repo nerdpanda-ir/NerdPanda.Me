@@ -23,7 +23,7 @@ export default class SkillGroup extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <section className='skillGroup posRel bg-white br3 sh3'>
+                    <section className='skillGroup posRel bg-white br5 sh3'>
                         <TipCircleIcon className='skillBtn'>
                             <i className={this.state.icon+" disN"}></i>
                             <section className='skillPrecent dirL disIB'>{this.state.skillAv}</section>
@@ -33,7 +33,6 @@ export default class SkillGroup extends React.Component{
                         <GraySmall tagName='h4' className='skillTitle h100 col-2 flR textCenter posAb'>
                             {this.state.title}
                         </GraySmall>
-
                         <section className='skillItemWrapper col-10 flL h100 dirL boxSBB' ref={this.elements.skillItemWrapperElement}>
                             {this.state.body}
                         </section>
