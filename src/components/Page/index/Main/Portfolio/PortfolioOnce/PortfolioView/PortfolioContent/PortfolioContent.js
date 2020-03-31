@@ -16,7 +16,7 @@ export default class PortfolioContent extends React.Component {
         let element =
             (
                 <React.Fragment>
-                    <figcaption className='portfolioContent boxSBB posAb color-white  col-11 br3 sh4 disN bg-perple-rgba8 dirR'>
+                    <figcaption className='portfolioContent boxSBB posAb color-white  col-11 br5 sh4 disN bg-perple-rgba8 dirR'>
                         <PortfolioHeader />
                         <PortfolioMain />
                         <PortfolioFooter />
