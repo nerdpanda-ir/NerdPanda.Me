@@ -10,7 +10,7 @@ export default class Info extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <Col className='col-6 disIB flR'>
+                    <Col className='col-6 flR'>
                         <InfoTitle />
                         <InfoDescription />
                         <SocialWrapper />
