@@ -118,6 +118,10 @@
     {
         box-sizing: border-box;
     }
+    .brN
+    {
+        border: none;
+    }
     .container 
     {
         width: var(--col-9);
