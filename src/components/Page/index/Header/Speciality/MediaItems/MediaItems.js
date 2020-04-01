@@ -14,7 +14,7 @@ export default class MediaItems extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <Col className='disIB col-6 flR dirL' id='specialityMedia'>
+                    <Col className='col-6 flR dirL' id='specialityMedia'>
                         <VectorImg src={fullStackImg} alt='full stack developer' />
                     </Col>
                 </React.Fragment>
