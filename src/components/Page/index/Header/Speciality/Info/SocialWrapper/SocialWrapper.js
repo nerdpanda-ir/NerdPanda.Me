@@ -14,7 +14,7 @@ export default class SocialWrapper extends React.Component{
             (
                 <React.Fragment>
                     <section id='socialRow'>
-                        <Text className='flR bg-perple-dark color-white disIB boxSBB col-3 posRel sh1 btn' tagName='span' id='contactMeBtn'>
+                        <Text className='flR bg-perple-dark color-white disIB boxSBB col-3 posRel sh4 btn' tagName='span' id='contactMeBtn'>
                             تماس با من
                             <i className="fal fa-long-arrow-alt-left"></i>
                         </Text>
