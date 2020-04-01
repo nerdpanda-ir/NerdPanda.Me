@@ -1,0 +1,119 @@
+#contactMe .inputWrapper
+{
+    margin-bottom: 65px;
+}
+#contactMe .inputWrapper:last-child
+{
+    margin-bottom: 0;
+}
+#contactMe .inputWrapper:nth-last-child(2)
+{
+    margin-bottom: 40px;
+}
+#contactMe input , textarea
+{
+    border: 0;
+    color: var(--color-main) !important;
+    border-bottom: 1px solid var(--color-main);
+    caret-color: var(--color-white);
+    text-indent: 65px;
+    font-family: 'pf-sans-light';
+}
+#contactMe textarea
+{
+    resize: none !important;
+    min-height: 85px;
+}
+#contactMe textarea+label
+{
+    bottom: 70px ;
+}
+#contactMe textarea:focus+label
+{
+    bottom: 100px !important;
+}
+#email
+{
+    text-indent: 85px !important;
+}
+#msg
+{
+    text-indent: 75px !important;
+}
+#contactMe input:focus , #contactMe textarea:focus
+{
+    border-bottom: 1px solid var(--color-secound);
+    text-indent: 10px !important;
+    caret-color: var(--color-main) !important;
+}
+input:focus + label,textarea:focus + label
+{
+    bottom: 35px !important;
+}
+input:focus + label .contactLable , input:focus + label i , textarea:focus + textarea .contactLable , textarea:focus + label i
+{
+    font-size: 16px !important;
+}
+#contactMe label
+{
+    bottom: 8px;
+    right: 10px;
+}
+#contactMe .contactLable
+{
+    margin-right: 10px;
+    font-size: 18px;
+}
+#contactMe label i
+{
+    font-size: 18px ;
+}
+
+
+#optionsWrapper
+{
+    cursor: pointer;
+}
+#optionsWrapper i
+{
+        font-size: 20px;
+        margin-left: 10px;
+        vertical-align: -4px;
+}
+#contactOptionSelect
+{
+    padding: 15px 25px 15px 15px;
+    border-bottom: 1px solid var(--color-main);
+}
+#optionsWrapper i.fa-sort-up {
+    margin-top: 6px;
+}
+ul#contactOptions
+{
+    z-index: 999;
+}
+ul#contactOptions li
+{
+    padding: 13px 25px;
+    transition: padding-right 1s;
+}
+ul#contactOptions li:hover
+{
+    transition: padding-right 1s;
+    color:var(--color-secound);
+    padding-right: 50px !important;
+}
+
+#contactMe form button
+{
+    height: 60px;
+    border: none;
+    border-radius: 60px;
+    font-family: 'pf-sans-medium';
+}
+#contactMe form button i{
+    font-size: 22px;
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+
