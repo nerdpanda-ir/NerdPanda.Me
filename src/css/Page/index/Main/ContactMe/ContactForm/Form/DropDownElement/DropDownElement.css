@@ -1,0 +1,33 @@
+#optionsWrapper
+{
+    cursor: pointer;
+}
+#optionsWrapper i
+{
+    font-size: 20px;
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+#contactOptionSelect
+{
+    padding: 15px 25px 15px 15px;
+    border-bottom: 1px solid var(--color-main);
+}
+#optionsWrapper i.fa-sort-up {
+    margin-top: 6px;
+}
+ul#contactOptions
+{
+    z-index: 999;
+}
+ul#contactOptions li
+{
+    padding: 13px 25px;
+    transition: padding-right 1s;
+}
+ul#contactOptions li:hover
+{
+    transition: padding-right 1s;
+    color:var(--color-secound);
+    padding-right: 50px !important;
+}
