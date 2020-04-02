@@ -28,7 +28,7 @@
 }
 #contactMe input:focus , #contactMe textarea:focus
 {
-    border-bottom: 1px solid var(--color-secound);
+    border-bottom: 1px solid var(--color-secound) !important;
     text-indent: 10px !important;
     caret-color: var(--color-main) !important;
 }
