@@ -2,8 +2,12 @@
     import React from "react";
     import Col from "../../../../../items/Col/Col";
     import VectorImg from "../../../../../items/VectorImg/VectorImg";
-    import contactImg from "../../../../../../img/page/index/contactMe.svg";
 /*====   import Sctipt    ====*/
+
+
+/*====   import Files    ====*/
+    import contactImg from "../../../../../../img/page/index/contactMe.svg";
+/*====   import Files    ====*/
     export default class ContactMedia extends React.Component
     {
         render() {
