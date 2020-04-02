@@ -6,6 +6,11 @@
     import DropDownElement from "./DropDownElement/DropDownElement";
     import BtnElement from "./BtnElement/BtnElement";
 /*====   import Sctipt    ====*/
+
+
+/*====   import Style    ====*/
+    import '../../../../../../../css/Page/index/Main/ContactMe/ContactForm/Form/Form.css'
+/*====   import Style    ====*/
 export default class Form extends React.Component{
     constructor() {
         super();
