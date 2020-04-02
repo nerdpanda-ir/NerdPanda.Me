@@ -3,6 +3,11 @@
     import Col from "../../../../../../../items/Col/Col";
     import {GlobalContextConsumer} from "../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
+
+/*====   import Style   ====*/
+    import '../../../../../../../../css/Page/index/Main/ContactMe/ContactForm/Form/TextAreaElement/TextAreaElement.css'
+/*====   import Style   ====*/
+
 export default class TextAreaElement extends React.Component{
     render() {
         let result=
