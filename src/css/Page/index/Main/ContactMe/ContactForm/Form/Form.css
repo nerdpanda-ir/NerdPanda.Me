@@ -1,0 +1,57 @@
+#contactMe .inputWrapper
+{
+    margin-bottom: 65px;
+}
+#contactMe .inputWrapper:last-child
+{
+    margin-bottom: 0;
+}
+#contactMe .inputWrapper:nth-last-child(2)
+{
+    margin-bottom: 40px;
+}
+#contactMe input , textarea
+{
+    color: var(--color-main) !important;
+    border-bottom: 1px solid var(--color-main);
+    caret-color: var(--color-white);
+    text-indent: 65px;
+    font-family: 'pf-sans-light';
+}
+#email
+{
+    text-indent: 85px !important;
+}
+#msg
+{
+    text-indent: 75px !important;
+}
+#contactMe input:focus , #contactMe textarea:focus
+{
+    border-bottom: 1px solid var(--color-secound);
+    text-indent: 10px !important;
+    caret-color: var(--color-main) !important;
+}
+input:focus + label,textarea:focus + label
+{
+    bottom: 35px !important;
+}
+
+input:focus + label .contactLable , input:focus + label i , textarea:focus + textarea .contactLable , textarea:focus + label i
+{
+    font-size: 16px !important;
+}
+#contactMe label
+{
+    bottom: 8px;
+    right: 10px;
+}
+#contactMe .contactLable
+{
+    margin-right: 10px;
+    font-size: 18px;
+}
+#contactMe label i
+{
+    font-size: 18px ;
+}
