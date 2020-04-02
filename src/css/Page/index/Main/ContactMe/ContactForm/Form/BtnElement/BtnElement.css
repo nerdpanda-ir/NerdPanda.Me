@@ -1,0 +1,12 @@
+#contactMe form button
+{
+    height: 60px;
+    border: none;
+    border-radius: 60px;
+    font-family: 'pf-sans-medium';
+}
+#contactMe form button i{
+    font-size: 22px;
+    margin-left: 10px;
+    vertical-align: -4px;
+}
