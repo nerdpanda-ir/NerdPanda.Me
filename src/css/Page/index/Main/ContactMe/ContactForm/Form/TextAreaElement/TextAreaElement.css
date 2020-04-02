@@ -1,0 +1,13 @@
+#contactMe textarea
+{
+    resize: none !important;
+    min-height: 85px;
+}
+#contactMe textarea+label
+{
+    bottom: 70px ;
+}
+#contactMe textarea:focus+label
+{
+    bottom: 100px !important;
+}
