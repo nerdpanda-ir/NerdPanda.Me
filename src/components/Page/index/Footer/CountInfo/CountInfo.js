@@ -18,6 +18,15 @@ export default class CountInfo extends React.Component
                         <GlobalContextProvider value={{icon : 'fal fa-laugh-wink' , title : 'مشتریان راضی', number : '20'}}>
                             <CountCell />
                         </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fal fa-project-diagram' , title : 'پروژه ها', number : '20'}}>
+                            <CountCell />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fal fa-alarm-clock' , title : 'ساعات کاری', number : '1527'}}>
+                            <CountCell />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fal fa-camera-retro  ' , title : 'اسکرین شات ها', number : '400'}}>
+                            <CountCell />
+                        </GlobalContextProvider>
                     </ul>
                 </React.Fragment>
             );
