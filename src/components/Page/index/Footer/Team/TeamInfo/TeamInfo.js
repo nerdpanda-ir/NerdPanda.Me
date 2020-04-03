@@ -4,6 +4,10 @@
     import GraySmall from "../../../../../items/Title/GraySmall/GraySmall";
 /*====   import Sctipt    ====*/
 
+/*====   import Style   ====*/
+    import '../../../../../../css/Page/index/Footer/Team/TeamInfo/TeamInfo.css'
+/*====   import Style   ====*/
+
 /*====   import files    ====*/
     import teamLogo from "../../../../../../img/global/luxappsLogo.svg";
 /*====   import files    ====*/
