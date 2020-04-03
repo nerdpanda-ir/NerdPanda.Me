@@ -3,6 +3,10 @@
     import SocialItem from "./SocialItem/SocialItem";
     import {GlobalContextProvider} from "../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
+
+/*====   import Style    ====*/
+    import '../../../../../../css/Page/index/Footer/Team/TeamSocials/TeamSocials.css'
+/*====   import Style    ====*/
 export default class TeamSocials extends React.Component
 {
     render() {
