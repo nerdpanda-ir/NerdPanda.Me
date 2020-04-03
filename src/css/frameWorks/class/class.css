@@ -7,7 +7,8 @@
         --color-white : #fff;
         --color-white-light : #f5f6fe; 
         --color-white-dark : #d9dce7;
-        
+        --color-white-dark2 :  #dce2ed;
+
         --color-gray : #5f6b75;
         --color-gray-dark : #3b444b;
 
@@ -69,6 +70,10 @@
     .bg-white-dark
     {
         background-color:var(--color-white-dark);
+    }
+    .bg-white-dark2
+    {
+        background-color:var(--color-white-dark2);
     }
     .bg-gray-dark
     {
