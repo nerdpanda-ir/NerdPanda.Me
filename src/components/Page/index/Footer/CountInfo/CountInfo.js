@@ -2,6 +2,11 @@
     import React from 'react';
     import CountCell from "./CountCell/CountCell";
 /*====   import Sctipt    ====*/
+
+/*====   import Style    ====*/
+    import '../../../../../css/Page/index/Footer/CountInfo/CountInfo.css'
+/*====   import Style    ====*/
+
 export default class CountInfo extends React.Component
 {
     render() {
