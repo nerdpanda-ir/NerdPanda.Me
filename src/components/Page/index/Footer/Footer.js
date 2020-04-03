@@ -3,6 +3,7 @@
     import Container from "../../../Container/Container";
     import CountInfo from "./CountInfo/CountInfo";
     import Team from "./Team/Team";
+    import CopyRight from "./CopyRight/CopyRight";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -17,6 +18,7 @@ export default class Footer extends React.Component{
                         <Container className='posRel h100 boxSBB'>
                             <CountInfo />
                             <Team />
+                            <CopyRight />
                         </Container>
                     </footer>
                 </React.Fragment>
