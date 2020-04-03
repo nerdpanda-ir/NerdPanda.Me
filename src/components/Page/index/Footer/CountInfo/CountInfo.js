@@ -1,6 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
     import CountCell from "./CountCell/CountCell";
+    import {GlobalContextProvider} from "../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -14,7 +15,9 @@ export default class CountInfo extends React.Component
             (
                 <React.Fragment>
                     <ul className='sh2 bg-white br5 boxSBB' id='countInfo'>
-                        <CountCell />
+                        <GlobalContextProvider value={{icon : 'fal fa-laugh-wink' , title : 'مشتریان راضی', number : '20'}}>
+                            <CountCell />
+                        </GlobalContextProvider>
                     </ul>
                 </React.Fragment>
             );
