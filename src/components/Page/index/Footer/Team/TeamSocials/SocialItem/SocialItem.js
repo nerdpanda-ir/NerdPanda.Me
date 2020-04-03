@@ -3,6 +3,11 @@
     import SocialIcon from "./SocialIcon/SocialIcon";
     import {GlobalContextConsumer} from "../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
+
+/*====   import Style   ====*/
+    import '../../../../../../../css/Page/index/Footer/Team/TeamSocials/SocialItem/SocialItem.css'
+/*====   import Style   ====*/
+
 export default class SocialItem extends React.Component{
     render() {
         let result =
