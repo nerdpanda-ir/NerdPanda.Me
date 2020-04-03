@@ -2,6 +2,7 @@
     import React from 'react';
     import Container from "../../../Container/Container";
     import CountInfo from "./CountInfo/CountInfo";
+    import Team from "./Team/Team";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -15,6 +16,7 @@ export default class Footer extends React.Component{
                     <footer id='pageFooter' className='bg-white-light'>
                         <Container className='posRel h100 boxSBB'>
                             <CountInfo />
+                            <Team />
                         </Container>
                     </footer>
                 </React.Fragment>
