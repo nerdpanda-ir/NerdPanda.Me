@@ -1,6 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
     import Container from "../../../Container/Container";
+    import CountInfo from "./CountInfo/CountInfo";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -13,7 +14,7 @@ export default class Footer extends React.Component{
                 <React.Fragment>
                     <footer id='pageFooter' className='bg-white-light'>
                         <Container>
-                            this is footer
+                            <CountInfo />
                         </Container>
                     </footer>
                 </React.Fragment>
