@@ -13,7 +13,7 @@ export default class Footer extends React.Component{
             (
                 <React.Fragment>
                     <footer id='pageFooter' className='bg-white-light'>
-                        <Container>
+                        <Container className='posRel h100 boxSBB'>
                             <CountInfo />
                         </Container>
                     </footer>
