@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
+    import {GlobalContextConsumer} from "../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -10,7 +11,12 @@ export default class CountIcon extends React.Component{
         let result =
             (
                 <React.Fragment>
-                        <i className="fal fa-laugh-wink color-secound"></i>
+                        <GlobalContextConsumer>
+                            {
+                                value =><i className={value.icon+" color-secound"}></i>
+                            }
+                        </GlobalContextConsumer>
+
                 </React.Fragment>
             );
         return result;
