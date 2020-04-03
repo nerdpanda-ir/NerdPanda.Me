@@ -14,7 +14,7 @@ export default class CountInfo extends React.Component
         let result =
             (
                 <React.Fragment>
-                    <ul className='sh2 bg-white br5 boxSBB' id='countInfo'>
+                    <ul className='sh2 bg-white br5 boxSBB posAb col-12 t0' id='countInfo'>
                         <GlobalContextProvider value={{icon : 'fal fa-laugh-wink' , title : 'مشتریان راضی', number : '20'}}>
                             <CountCell />
                         </GlobalContextProvider>
