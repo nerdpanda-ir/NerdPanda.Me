@@ -1,11 +1,12 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
+    import TeamInfo from "./TeamInfo/TeamInfo";
+    import TeamSocials from "./TeamSocials/TeamSocials";
+    import Col from "../../../../items/Col/Col";
 /*====   import Sctipt    ====*/
 
 /*====   import Styles   ====*/
     import '../../../../../css/Page/index/Footer/Team/Team.css'
-    import TeamLogo from "./TeamLogo/TeamLogo";
-    import TeamSocials from "./TeamSocials/TeamSocials";
 /*====   import Styles   ====*/
 
 export default class Team extends React.Component
@@ -14,8 +15,10 @@ export default class Team extends React.Component
         let result =
             (
                 <React.Fragment>
-                    <TeamLogo />
-                    <TeamSocials />
+                    <Col id='team'>
+                        <TeamInfo />
+                        <TeamSocials />
+                    </Col>
                 </React.Fragment>
             );
         return result;
