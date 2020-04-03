@@ -8,12 +8,12 @@
     import teamLogo from "../../../../../../img/global/luxappsLogo.svg";
 /*====   import files    ====*/
 
-export default class TeamLogo extends React.Component{
+export default class TeamInfo extends React.Component{
     render() {
         let result =
             (
                 <React.Fragment>
-                    <figure id='team' className='textCenter'>
+                    <figure className='textCenter'>
                         <Logo imageSrc={teamLogo} className='col-1 disIB' alt='luxApps.ir'/>
                         <GraySmall tagName='h2' id='teamTitle'> Lux Apps</GraySmall>
                         <figcaption>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</figcaption>
