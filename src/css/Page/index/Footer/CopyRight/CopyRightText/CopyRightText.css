@@ -1,0 +1,13 @@
+#copyRight a
+{
+    text-decoration: none;
+}
+#copyRight a:hover
+{
+    color: var(--color-secound);
+}
+#copyRight span.teamName
+{
+    margin-right: 10px;
+    letter-spacing: 5px;
+}
