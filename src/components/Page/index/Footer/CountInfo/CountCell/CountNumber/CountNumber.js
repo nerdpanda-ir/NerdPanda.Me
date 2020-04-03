@@ -5,7 +5,6 @@
 
 /*====   import Style   ====*/
     import '../../../../../../../css/Page/index/Footer/CountInfo/CountCell/CountNumber/CountNumber.css'
-import GraySmall from "../../../../../../items/Title/GraySmall/GraySmall";
 /*====   import Style   ====*/
 export default class CountNumber extends React.Component{
     render() {
