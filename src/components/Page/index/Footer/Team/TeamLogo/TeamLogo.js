@@ -5,7 +5,7 @@
 /*====   import Sctipt    ====*/
 
 /*====   import files    ====*/
-    import teamLogo from "../../../../../../img/global/luxapps_logo.svg";
+    import teamLogo from "../../../../../../img/global/luxappsLogo.svg";
 /*====   import files    ====*/
 
 export default class TeamLogo extends React.Component{
