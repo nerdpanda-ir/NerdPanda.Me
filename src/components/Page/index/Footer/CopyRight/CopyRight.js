@@ -1,10 +1,11 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
+    import CopyRightText from "./CopyRightText/CopyRightText";
+    import CopyRightVersion from "./CopyRightVersion/CopyRightVersion";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
     import '../../../../../css/Page/index/Footer/CopyRight/CopyRight.css'
-import CopyRightText from "./CopyRightText/CopyRightText";
 /*====   import Style    ====*/
 
 export default class CopyRight extends React.Component{
@@ -12,8 +13,9 @@ export default class CopyRight extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <section id='copyRight' className='textCenter'>
+                    <section id='copyRight' className='textCenter posRel'>
                         <CopyRightText />
+                        <CopyRightVersion />
                     </section>
                 </React.Fragment>
             );
