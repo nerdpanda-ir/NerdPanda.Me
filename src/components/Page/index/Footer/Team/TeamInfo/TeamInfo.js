@@ -20,7 +20,7 @@ export default class TeamInfo extends React.Component{
                     <figure className='textCenter'>
                         <Logo imageSrc={teamLogo} className='col-1 disIB' alt='luxApps.ir'/>
                         <GraySmall tagName='h2' id='teamTitle'> Lux Apps</GraySmall>
-                        <figcaption>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</figcaption>
+                        <figcaption>ادعا نمیکنیم بهترینیم،ولی همواره سعی کردیم با بهترین هایمان،برای شما بهترین باشیم</figcaption>
                     </figure>
                 </React.Fragment>
             );
