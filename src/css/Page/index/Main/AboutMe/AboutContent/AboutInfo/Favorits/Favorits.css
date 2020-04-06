@@ -34,9 +34,11 @@
 #favorits li a::after
 {
     content: '\f0c1';
-    font-family: 'Font Awesome 5 Pro Light';
+    font-family: "Font Awesome 5 Pro";
     font-size: 30px;
     display: none;
+    color: var(--color-secound) !important;
+    font-weight: lighter;
 }
 #favorits li a:hover::after
 {
