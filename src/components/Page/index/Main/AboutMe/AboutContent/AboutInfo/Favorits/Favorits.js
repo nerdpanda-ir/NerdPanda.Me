@@ -17,7 +17,7 @@ export default class Favorits extends React.Component {
                                 <i className="fal fa-code"></i>
                         </li>
                         <li className="hint--bottom hint--perple hint--medium"
-                            aria-label="وقتی که عاشق نوشتن برنامه های کامپیوتری باشی هر روز چیز های جدید یاد میگیری ">
+                            aria-label="وقتی که عاشق نوشتن برنامه های کامپیوتری باشی هر روز چیز های جدید و تکنیک های جدید یاد میگیری">
                             <i className="fal fa-chalkboard-teacher"></i>
                         </li>
                         <li className="hint--bottom hint--perple hint--medium" aria-label="یکی از لذت بخش ترین کار های دنیا اینه که در هنگام کد نویسی موزیک گوش کنی ">
@@ -40,7 +40,6 @@ export default class Favorits extends React.Component {
                             <a href='https://idpay.ir/nerdpanda'>
                                 <i className="far fa-coin"></i>
                             </a>
-
                         </li>
                     </ul>
                 </React.Fragment>
