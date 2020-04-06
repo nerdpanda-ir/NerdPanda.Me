@@ -17,16 +17,19 @@ export default class TeamSocials extends React.Component
                         <GlobalContextProvider value={{icon :  'fab fa-facebook-f', link : 'https://www.facebook.com'}}>
                             <SocialItem />
                         </GlobalContextProvider>
-                        <GlobalContextProvider value={{icon :  'fab fa-twitter', link : 'https://www.facebook.com'}}>
+                        <GlobalContextProvider value={{icon :  'fab fa-twitter', link : 'https://www.twitter.com'}}>
                             <SocialItem />
                         </GlobalContextProvider>
-                        <GlobalContextProvider value={{icon :  'fab fa-instagram', link : 'https://www.facebook.com'}}>
+                        <GlobalContextProvider value={{icon :  'fab fa-instagram', link : 'https://www.instagram.com'}}>
                             <SocialItem />
                         </GlobalContextProvider>
-                        <GlobalContextProvider value={{icon :  'fab fa-youtube', link : 'https://www.facebook.com'}}>
+                        <GlobalContextProvider value={{icon :  'fab fa-youtube', link : 'https://www.youtube.com'}}>
                             <SocialItem />
                         </GlobalContextProvider>
-                        <GlobalContextProvider value={{icon :  'fab fa-twitch', link : 'https://www.facebook.com'}}>
+                        <GlobalContextProvider value={{icon :  'fab fa-twitch', link : 'https://www.twitch.tv'}}>
+                            <SocialItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon :  'fab fa-linkedin-in', link : 'https://www.linkedin.com/'}}>
                             <SocialItem />
                         </GlobalContextProvider>
                     </ul>
