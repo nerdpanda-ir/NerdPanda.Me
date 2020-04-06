@@ -22,7 +22,7 @@ export default class CircleSkills extends React.Component{
                         <GlobalContextProvider value={{title : 'Seo' , precent : '30%'}}>
                             <CircleProgress />
                         </GlobalContextProvider>
-                        <GlobalContextProvider value={{title : 'Marketing' , precent : '30%'}}>
+                        <GlobalContextProvider value={{title : 'Regex' , precent : '50%'}}>
                             <CircleProgress />
                         </GlobalContextProvider>
                     </section>
