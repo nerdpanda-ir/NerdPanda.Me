@@ -11,7 +11,7 @@ export default class InfoTitle extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <PerpleBig tagName='h1'>فول استک دولوپر</PerpleBig>
+                    <PerpleBig tagName='h1'>فول استک  وب دولوپر</PerpleBig>
                 </React.Fragment>
             );
         return result;
