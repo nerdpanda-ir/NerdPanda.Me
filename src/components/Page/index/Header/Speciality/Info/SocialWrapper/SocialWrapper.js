@@ -19,10 +19,11 @@ export default class SocialWrapper extends React.Component{
                             <i className="fal fa-long-arrow-alt-left"></i>
                         </Text>
                         <ul className='flR col-9 h100 boxSBB dirL' id='SpecialSocialNetworkWrapper'>
-                            <li><a href='https://www.google.com' className='btn' ><i className="fab fa-twitter"></i></a></li>
-                            <li><a href='https://www.google.com' className='btn' ><i className="fab fa-telegram-plane"></i></a></li>
-                            <li><a href='https://www.google.com' className='btn' ><i className="fab fa-instagram"></i></a></li>
-                            <li><a href='https://www.google.com' className='btn'><i className="fab fa-steam-symbol"></i></a></li>
+                            <li><a href='https://twitter.com/' className='btn' ><i className="fab fa-twitter"></i></a></li>
+                            <li><a href='https://www.linkedin.com/' className='btn' ><i className="fab fa-linkedin-in"></i></a></li>
+                            <li><a href='https://telegram.org/' className='btn' ><i className="fab fa-telegram-plane"></i></a></li>
+                            <li><a href='http://instagram.com/' className='btn' ><i className="fab fa-instagram"></i></a></li>
+                            <li><a href='https://steamcommunity.com/id/itonegamer' className='btn'><i className="fab fa-steam-symbol"></i></a></li>
                         </ul>
                         <ClearBoth/>
                     </section>
