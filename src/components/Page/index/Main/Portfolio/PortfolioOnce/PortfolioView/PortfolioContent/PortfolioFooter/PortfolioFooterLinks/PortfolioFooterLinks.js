@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from "react";
+    import {GlobalContextConsumer} from "../../../../../../../../../GlobalContext/GlobalContext";
 /*====   import Sctipt    ====*/
 export default class PortfolioFooterLinks extends React.Component {
     render() {
@@ -11,7 +12,11 @@ export default class PortfolioFooterLinks extends React.Component {
                             <i className="fal fa-link"></i>
                         </li>
                         <li>
-                            <i className="fal fa-eye"></i>
+                            <GlobalContextConsumer>
+                                {
+                                    value=> <a href={window.location.href.substr(0,window.location.href.lastIndexOf('/'))+value.img} className='color-white'>  <i className="fal fa-eye"></i></a>
+                                }
+                            </GlobalContextConsumer>
                         </li>
                     </ul>
                 </React.Fragment>
