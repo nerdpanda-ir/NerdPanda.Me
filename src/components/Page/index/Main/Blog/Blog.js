@@ -14,6 +14,11 @@
     import '../../../../../css/Page/index/Main/Blog/Blog.css';
 /*====   import Style    ====*/
 
+/*====   import Files    ====*/
+    import post1 from '../../../../../img/page/index/Blog/post1.jpg'
+    import post2 from '../../../../../img/page/index/Blog/post2.jpg'
+/*====   import Files    ====*/
+
 export default class Blog extends React.Component{
     render() {
         let result =
@@ -24,10 +29,10 @@ export default class Blog extends React.Component{
                         <Container className='posRel'>
                             <MoreBtn />
                             <ClearBoth />
-                            <GlobalContextProvider value={{img : 'http://localhost:3000/static/media/port4.b22a9f42.jpg' , alt : 'firstPost',title : 'پست اول' , content : 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است....'}}>
+                            <GlobalContextProvider value={{img : post1, alt : 'target',title : 'هدف' , content : 'توی زندگیتون هدف داشته باشید و برای اون تلاش کنید !!!!‌ برای ساعت به ساعت ، دقیقه به دقیقه ، برنامه داشته باشید و به هر چیزی و یا هر کسی که باعث خراب شدن یا به هم ریختن برنامه ریزیتون میشه نه بگید....'}}>
                                 <Post />
                             </GlobalContextProvider>
-                            <GlobalContextProvider value={{img : 'http://localhost:3000/static/media/port3.96f126f5.png' , alt : 'firstPost',title : 'پست اول' , content : 'first'}}>
+                            <GlobalContextProvider value={{img :post2, alt : 'JustTime',title : 'اتلاف وقت' , content : 'اگه آدم توی زندگی هدفی رو دنبال کنه ، زمان یکی از پارامتر هایی هست که خیلی باید واسش ارزش قائل باشه و سعی کنه هر چیزی که باعث اتلاف وقتش میشه رو ازش دوری کنه.....'}}>
                                 <Post />
                             </GlobalContextProvider>
                             <ClearBoth/>
