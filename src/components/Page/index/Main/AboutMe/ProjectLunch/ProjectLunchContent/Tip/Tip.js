@@ -1,14 +1,12 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
-    import Col from "../../../../../../items/Col/Col";
-    import BigParagraph from "../../../../../../items/Paragraph/BigParagraph/BigParagraph";
-    import GraySmall from "../../../../../../items/Title/GraySmall/GraySmall";
-    import TipCircleIcon from "../../../../../../items/TipCircleIcon/TipCircleIcon";
+    import Col from "../../../../../../../items/Col/Col";
+    import TipIcon from "./TipIcon/TipIcon";
+    import TipContent from "./TipContent/TipContent";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
-    import '../../../../../../../css/Page/index/Main/ProjectLunch/Tip/Tip.css'
-
+    import '../../../../../../../../css/Page/index/Main/ProjectLunch/Tip/Tip.css'
 /*====   import Style    ====*/
 export default class Tip extends React.Component{
 
@@ -17,13 +15,8 @@ export default class Tip extends React.Component{
             (
                 <React.Fragment>
                     <Col className='tip br5 sh3 col-11 bg-white dirR posRel boxSBB'>
-                        <TipCircleIcon>
-                            <i className={this.state.icon}></i>
-                        </TipCircleIcon>
-                        <section className='tipContent'>
-                            <GraySmall tagName='h4'>{this.state.title}</GraySmall>
-                            <BigParagraph className='textCenter'>{this.state.body}</BigParagraph>
-                        </section>
+                        <TipIcon />
+                        <TipContent />
                     </Col>
                 </React.Fragment>
             );
