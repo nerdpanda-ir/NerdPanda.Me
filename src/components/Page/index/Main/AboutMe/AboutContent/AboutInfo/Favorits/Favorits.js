@@ -1,5 +1,7 @@
 /*====   import Sctipt    ====*/
-import React from 'react';
+    import React from 'react';
+    import {GlobalContextProvider} from "../../../../../../../GlobalContext/GlobalContext";
+    import FavoritsItem from "./FavoritsItem/FavoritsItem";
 /*====   import Sctipt    ====*/
 
 /*====   import Style  ====*/
@@ -13,35 +15,27 @@ export default class Favorits extends React.Component {
             (
                 <React.Fragment>
                     <ul className='dirL' id='favorits'>
-                        <li  className="hint--bottom hint--perple hint--medium" aria-label="برنامه نویس ها همیشه به تایپ کردن و نوشتن کد علاقه دارن">
-                                <i className="fal fa-code"></i>
-                        </li>
-                        <li className="hint--bottom hint--perple hint--medium"
-                            aria-label="وقتی که عاشق نوشتن برنامه های کامپیوتری باشی هر روز چیز های جدید یاد میگیری ">
-                            <i className="fal fa-chalkboard-teacher"></i>
-                        </li>
-                        <li className="hint--bottom hint--perple hint--medium" aria-label="یکی از لذت بخش ترین کار های دنیا اینه که در هنگام کد نویسی موزیک گوش کنی ">
-                            <a href='https://www.youtube.com/playlist?list=PLnXmz35qhLtKzEOmdpdYQtgQpj_PmuFBY'>
-                                <i className="fal fa-list-music"></i>
-                            </a>
-                        </li>
-                        <li className="hint--bottom hint--perple hint--medium" aria-label="برنامه نوشتن بدون نوشیدنی داغ امکان پذیر نیست ">
-                            <i className="fal fa-mug-hot"></i>
-                        </li>
-                        <li className="hint--bottom hint--perple hint--medium" aria-label="ادم تا وقتی زندس باید از غذا های لذیذ لذت ببره‌">
-                            <i className="fal fa-burger-soda"></i>
-                        </li>
-                        <li className="hint--bottom hint--perple hint--medium" aria-label="توی اوغات های فراغت به جای اینکه از خونه بری بیرون و خاک بخوری !!!‌گیم بهترین گزینس ">
-                            <a href='https://steamcommunity.com/id/itonegamer'>
-                                <i className="fal fa-gamepad-alt"></i>
-                            </a>
-                        </li>
-                        <li className="hint--bottom hint--perple hint--medium" aria-label="کی رو میشناسید که پول دوست نداشته باشه ؟‌">
-                            <a href='https://idpay.ir/nerdpanda'>
-                                <i className="far fa-coin"></i>
-                            </a>
-
-                        </li>
+                        <GlobalContextProvider value={{icon : 'fal fa-code' , description : 'برنامه نویس ها همیشه به تایپ کردن و نوشتن کد علاقه دارن'}}>
+                            <FavoritsItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fal fa-chalkboard-teacher' , description : 'وقتی که عاشق نوشتن برنامه های کامپیوتری باشی هر روز چیز های جدید یاد میگیری '}}>
+                            <FavoritsItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fal fa-list-music' , description :'یکی از لذت بخش ترین کار های دنیا اینه که در هنگام کد نویسی موزیک گوش کنی ' , href :'https://www.youtube.com/playlist?list=PLnXmz35qhLtKzEOmdpdYQtgQpj_PmuFBY'}}>
+                            <FavoritsItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fal fa-mug-hot' , description :'برنامه نوشتن بدون نوشیدنی داغ امکان پذیر نیست ' }}>
+                            <FavoritsItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fal fa-burger-soda' , description :'ادم تا وقتی زندس باید از غذا های لذیذ لذت ببره ' }}>
+                            <FavoritsItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fal fa-gamepad-alt' , description :'توی اوغات های فراغت به جای اینکه از خونه بری بیرون و خاک بخوری !!!‌گیم بهترین گزینس ' , href : 'https://steamcommunity.com/id/itonegamer'}}>
+                            <FavoritsItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'far fa-coin' , description :'کی رو میشناسید که پول دوست نداشته باشه ؟' , href : 'https://idpay.ir/nerdpanda'}}>
+                            <FavoritsItem />
+                        </GlobalContextProvider>
                     </ul>
                 </React.Fragment>
             );
