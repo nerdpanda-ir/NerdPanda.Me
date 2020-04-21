@@ -11,14 +11,7 @@
 
 /*====   import Style    ====*/
 export default class Tip extends React.Component{
-    constructor() {
-        super();
-        this.state = {body : null , title : null , icon : null };
-    }
-    static getDerivedStateFromProps(props)
-    {
-        return {body : props.children , title : props.title , icon : props.icon }
-    }
+
     render() {
         let result =
             (
