@@ -1,5 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from 'react';
+    import {GlobalContextProvider} from "../../../../../../../GlobalContext/GlobalContext";
+    import SocialItem from "./SocialItem/SocialItem";
 /*====   import Sctipt    ====*/
 export default class SocialContainer extends React.Component {
     render() {
@@ -7,10 +9,21 @@ export default class SocialContainer extends React.Component {
             (
                 <React.Fragment>
                     <ul className='flR col-9 h100 boxSBB dirL' id='SpecialSocialNetworkWrapper'>
-                        <li><a href='https://www.google.com' className='btn' ><i className="fab fa-twitter"></i></a></li>
-                        <li><a href='https://www.google.com' className='btn' ><i className="fab fa-telegram-plane"></i></a></li>
-                        <li><a href='https://www.google.com' className='btn' ><i className="fab fa-instagram"></i></a></li>
-                        <li><a href='https://www.google.com' className='btn'><i className="fab fa-steam-symbol"></i></a></li>
+                        <GlobalContextProvider value={{icon : 'fab fa-twitter' , href : 'https://www.google.com'}}>
+                            <SocialItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fab fa-telegram-plane' , href : 'https://www.google.com'}}>
+                            <SocialItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fab fa-instagram' , href : 'https://www.google.com'}}>
+                            <SocialItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fab fa-steam-symbol' , href : 'https://www.google.com'}}>
+                            <SocialItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fab fa-linkedin-in' , href : 'https://www.google.com'}}>
+                            <SocialItem />
+                        </GlobalContextProvider>
                     </ul>
                 </React.Fragment>
             );
