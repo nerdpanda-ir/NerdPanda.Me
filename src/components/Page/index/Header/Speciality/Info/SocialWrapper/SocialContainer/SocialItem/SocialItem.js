@@ -1,6 +1,6 @@
 /*====   import Sctipt    ====*/
     import React from "react";
-    import {GlobalContextConsumer} from "../../../../../../../../GlobalContext/GlobalContext";
+    import SocialItemContent from "./SocialItemContent/SocialItemContent";
 /*====   import Sctipt    ====*/
 export default class  SocialItem extends React.Component{
     render() {
@@ -8,11 +8,7 @@ export default class  SocialItem extends React.Component{
             (
                 <React.Fragment>
                     <li>
-                        <GlobalContextConsumer>
-                        {
-                            value=><a href={value.href} className='btn' ><i className={value.icon}></i></a>
-                        }
-                        </GlobalContextConsumer>
+                        <SocialItemContent />
                     </li>
                 </React.Fragment>
             );
