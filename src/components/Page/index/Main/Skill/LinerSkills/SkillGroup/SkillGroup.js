@@ -50,7 +50,7 @@ export default class SkillGroup extends React.Component{
     componentDidUpdate() {
 
         if (this.state.skillAv>0)
-            this.setState({skillAv : (this.state.skillAv / this.elements.precentElements.length) + '%'});
+            this.setState({skillAv : window.Math.trunc(this.state.skillAv / this.elements.precentElements.length) + '%'});
     }
     precentsIteration(element)
     {
