@@ -30,7 +30,7 @@ export default class SkillGroup extends React.Component{
                         </TipCircleIcon>
 
 
-                        <GraySmall tagName='h4' className='skillTitle h100 col-2 flR textCenter posAb'>
+                        <GraySmall tagName='h4' className='skillTitle col-2 flR textCenter posAb'>
                             {this.state.title}
                         </GraySmall>
                         <section className='skillItemWrapper col-10 flL h100 dirL boxSBB' ref={this.elements.skillItemWrapperElement}>
