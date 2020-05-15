@@ -3,11 +3,11 @@
     import Container from "../../../../Container/Container";
     import Info from "./Info/Info";
     import MediaItems from "./MediaItems/MediaItems";
+    import ClearBoth from "../../../../items/ClearBoth/ClearBoth";
 /*====   import Sctipt    ====*/
 
 /*====   import Styles    ====*/
     import '../../../../../css/Page/index/Header/Speciality/Speciality.css'
-import ClearBoth from "../../../../items/ClearBoth/ClearBoth";
 /*====   import Styles    ====*/
 export default class Speciality extends React.Component{
     render() {
