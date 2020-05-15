@@ -1,5 +1,7 @@
 /*====   import Sctipt    ====*/
     import React from "react";
+    import {GlobalContextProvider} from "../../../../../../../../../GlobalContext/GlobalContext";
+    import ArticleDataItem from "./ArticleDataItem/ArticleDataItem";
 /*====   import Sctipt    ====*/
 
 /*====   import Style    ====*/
@@ -11,18 +13,15 @@ export default class ArticleData extends React.Component{
             (
                 <React.Fragment>
                     <ul>
-                        <li>
-                            <i className="fal fa-calendar-edit"></i>
-                            <span className='iconLable'>1398/10/02</span>
-                        </li>
-                        <li>
-                            <i className="fal fa-comments-alt"></i>
-                            <span className='iconLable'>50</span>
-                        </li>
-                        <li>
-                            <i className="fal fa-heart"></i>
-                            <span className='iconLable'>50</span>
-                        </li>
+                        <GlobalContextProvider value={{icon : 'fal fa-calendar-edit' , value : '1398/10/02'}}>
+                            <ArticleDataItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fal fa-comments-alt' , value : '50'}}>
+                            <ArticleDataItem />
+                        </GlobalContextProvider>
+                        <GlobalContextProvider value={{icon : 'fal fa-heart' , value : '55'}}>
+                            <ArticleDataItem />
+                        </GlobalContextProvider>
                     </ul>
                 </React.Fragment>
             );
