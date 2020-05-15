@@ -13,23 +13,23 @@ export default class Menu extends React.Component
         (
             <React.Fragment>
                 <ul id='PageMenu' className='disIB h100 col-9 flR'>
-                    <GlobalContextProvider value={['خانه','fal fa-home-heart']}>
-                        <List url='/'/>
+                    <GlobalContextProvider value={{title : 'خانه' , icon : 'fal fa-home-heart' , location : '/'}}>
+                        <List/>
                     </GlobalContextProvider>
-                    <GlobalContextProvider value={['درباره من','fal fa-bullhorn']}>
-                        <List url='/home'/>
+                    <GlobalContextProvider value={{title : 'درباره من' , icon : 'fal fa-bullhorn' , location : '/home'}}>
+                        <List />
                     </GlobalContextProvider>
-                    <GlobalContextProvider value={['مهارت ها','fal fa-head-side-brain']}>
-                        <List url='/home'/>
+                    <GlobalContextProvider value={{title : 'مهارت ها' , icon : 'fal fa-head-side-brain' , location : '/home'}}>
+                        <List/>
                     </GlobalContextProvider>
-                    <GlobalContextProvider value={['نمونه کارها','fal fa-handshake']}>
-                        <List url='/home'/>
+                    <GlobalContextProvider value={{title : 'نمونه کارها' , icon : 'fal fa-handshake' , location : '/home'}}>
+                        <List/>
                     </GlobalContextProvider>
-                    <GlobalContextProvider value={['وبلاگ','fal fa-newspaper']}>
-                        <List url='/home'/>
+                    <GlobalContextProvider value={{title : 'وبلاگ' , icon : 'fal fa-newspaper' , location : '/home'}}>
+                        <List/>
                     </GlobalContextProvider>
-                    <GlobalContextProvider value={['تماس با من','fal fa-comments-dollar']}>
-                        <List url='/home'/>
+                    <GlobalContextProvider value={{title : 'تماس با من' , icon : 'fal fa-comments-dollar' , location : '/home'}}>
+                        <List />
                     </GlobalContextProvider>
                 </ul>
             </React.Fragment>
