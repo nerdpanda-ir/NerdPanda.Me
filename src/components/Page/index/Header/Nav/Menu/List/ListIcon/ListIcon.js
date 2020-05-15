@@ -13,7 +13,7 @@ export default class ListIcon extends React.Component
         (
             <React.Fragment>
                 <GlobalContextConsumer>
-                    {(value)=><i className={"menuIcon "+value[1]}></i>}
+                    {(value)=><i className={"menuIcon "+value.icon}></i>}
                 </GlobalContextConsumer>
             </React.Fragment>
         )
