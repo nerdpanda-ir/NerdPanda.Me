@@ -12,7 +12,7 @@ export default class ListText extends React.Component
                 <span className='listText'>
                     <GlobalContextConsumer>
                         {
-                            (value)=> value[0]
+                            (value)=> value.title
                         }
                     </GlobalContextConsumer>
                 </span>
