@@ -196,7 +196,9 @@
     {
         position: absolute !important;
     }
-
+    .posFix{
+        position: fixed;
+    }
     .margCenter 
     {
         margin-right:auto ;
