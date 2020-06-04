@@ -22,7 +22,7 @@ export default class Nav extends React.Component
         let result = 
         (
             <React.Fragment>
-                <nav id='topNav' className='sh1'>
+                <nav id='topNav' className='sh1 bg-white animate__animated'>
                     <Container className='h100'>
                         <Logo id='NavLogoWrapper' className='h100 disIB col-1 boxSBB flR' imageSrc={LogoImg} alt='NerdPandaLogo'/>
                         <Menu />
