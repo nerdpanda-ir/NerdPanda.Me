@@ -61,6 +61,8 @@ export default class FixNav {
         if (!this.status.isFix)
         {
             this.status.isFix = true;
+            if (this.userSetting.unfixAnimation!==null||this.userSetting.fixAnimation!==null)
+                this.clearAnimation();
             if (this.userSetting.fixAnimation!==null)
                 this.element.classList.add(this.userSetting.fixAnimation);
             if (typeof this.userSetting.fixCallBackOnce==="function")
@@ -79,6 +81,8 @@ export default class FixNav {
         if (this.status.isFix)
         {
             this.status.isFix= false;
+            if (this.userSetting.unfixAnimation!==null||this.userSetting.fixAnimation!==null)
+                this.clearAnimation();
             if (this.userSetting.unfixAnimation!==null)
                 this.element.classList.add(this.userSetting.unfixAnimation);
             if (typeof this.userSetting.unfixCallBackOnce==="function")
