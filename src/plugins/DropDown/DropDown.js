@@ -77,7 +77,7 @@ export default class DropDown extends React.Component{
                 query = `#${query}`;
                 result = ((!multiple)? window.document.body.querySelector(query) : window.document.body.querySelectorAll(query));
                 if (result===null)
-                    throw new Error('not Found Element -> '+query);
+                    throw new Error(`not Found Element -> ${query}`);
             }
             catch (e) {
                 window.console.error(e);
