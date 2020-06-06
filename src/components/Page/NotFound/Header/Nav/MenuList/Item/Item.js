@@ -14,7 +14,7 @@ export default class Item extends React.Component{
         let result =
             (
                 <li className='disIB'>
-                    {window.console.log(this.state)}
+                    {this.state.title}
                 </li>
             );
         return result;
