@@ -2,6 +2,10 @@
 import React from 'react';
 import Header from "./Header/Header";
 /*====   import Sctipt    ====*/
+
+/*====   import Style   ====*/
+import '../../../css/Page/notFound/NotFound.css';
+/*====   import Style   ====*/
 export default class NotFound extends React.Component
 {
     render()
