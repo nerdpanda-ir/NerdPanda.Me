@@ -6,7 +6,7 @@ export default class menuList extends React.Component{
     render() {
         let result =
             (
-                <ul className='margCenter disB'>
+                <ul className='margCenter disB wfc'>
                     <Item title='خانه'/>
                     <Item title='وبلاگ'/>
                     <Item title='نمونه کار ها '/>
