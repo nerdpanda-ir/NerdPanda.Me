@@ -1,5 +1,6 @@
 /*====   import Sctipt    ====*/
 import React from 'react';
+import Nav from "./Nav/Nav";
 /*====   import Sctipt    ====*/
 export default class Header extends React.Component{
     render() {
@@ -7,7 +8,7 @@ export default class Header extends React.Component{
             (
                 <React.Fragment>
                     <header>
-                        hello im header
+                        <Nav />
                     </header>
                 </React.Fragment>
             );
