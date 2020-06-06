@@ -1,15 +1,16 @@
 /*====   import Sctipt    ====*/
 import React from 'react';
+import Item from "./Item/Item";
 /*====   import Sctipt    ====*/
 export default class menuList extends React.Component{
     render() {
         let result =
             (
-                <ul>
-                    <li>خانه  </li>
-                    <li>وبلاگ</li>
-                    <li>نمونه کار ها </li>
-                    <li>پادکست</li>
+                <ul className='margCenter disB'>
+                    <Item title='خانه'/>
+                    <Item title='وبلاگ'/>
+                    <Item title='نمونه کار ها '/>
+                    <Item title='پادکست ها '/>
                 </ul>
             );
         return result;
