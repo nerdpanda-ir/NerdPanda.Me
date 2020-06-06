@@ -12,8 +12,8 @@ export default class Nav extends React.Component{
         let result =
             (
                 <React.Fragment>
-                    <nav id='topNav'>
-                        <Logo imageSrc={pandaLogo} alt='pandaLogo' id='navLogo'/>
+                    <nav id='topNav' className='sh1 posRel'>
+                        <Logo imageSrc={pandaLogo} alt='pandaLogo' id='navLogo' className='posAb'/>
                     </nav>
                 </React.Fragment>
             );
