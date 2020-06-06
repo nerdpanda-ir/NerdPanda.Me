@@ -7,9 +7,9 @@ export default class NotFound extends React.Component
     {
         let result = 
         (
-            <React.Fragment>
+            <section id='notFound'>
                 <h1>گشتم نبود نگرد نیست !!!!‌ </h1>
-            </React.Fragment>
+            </section>
         );
         return result; 
     }
