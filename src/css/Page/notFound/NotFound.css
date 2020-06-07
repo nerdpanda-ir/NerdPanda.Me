@@ -10,3 +10,8 @@
     left: 50%;
     margin-left: -30px;
 }
+#notFound #topNav ul li
+{
+    margin-left: 20px;
+    padding: 20px;
+}
