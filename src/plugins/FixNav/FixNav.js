@@ -59,16 +59,18 @@ export default class FixNav {
             this.userSetting.fixCallBack(this.element);
         /* fix menu once running methods */
         if (!this.status.isFix)
-        {
-            this.status.isFix = true;
-            if (this.userSetting.unfixAnimation!==null||this.userSetting.fixAnimation!==null)
-                this.clearAnimation();
-            if (this.userSetting.fixAnimation!==null)
-                this.element.classList.add(this.userSetting.fixAnimation);
-            if (typeof this.userSetting.fixCallBackOnce==="function")
-                this.userSetting.fixCallBackOnce();
-        }
+            this.whenFixMenuOnceRunn();
         /* fix menu once running methods */
+    }
+    whenFixMenuOnceRunn()
+    {
+        this.status.isFix = true;
+        if (this.userSetting.unfixAnimation!==null||this.userSetting.fixAnimation!==null)
+            this.clearAnimation();
+        if (this.userSetting.fixAnimation!==null)
+            this.element.classList.add(this.userSetting.fixAnimation);
+        if (typeof this.userSetting.fixCallBackOnce==="function")
+            this.userSetting.fixCallBackOnce();
     }
     unFixMenu()
     {
